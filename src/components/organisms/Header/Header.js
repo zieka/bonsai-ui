@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from '../../../assets/logo.svg';
 import './Header.css';
+
+const logo = 'https://placeholdit.co//i/80x80?';
 
 class Header extends Component {
   render() {
