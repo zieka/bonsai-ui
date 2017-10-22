@@ -24,6 +24,7 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
+    "postbuild": "mkdir build/bonsai-ui && mv build/static build/bonsai-ui/static/",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
