@@ -1,0 +1,46 @@
+
+$sm-breakpoint:                                     480px;
+$md-breakpoint:                                     839px;
+$lg-breakpoint:                                     1024px;
+
+
+// Small devices
+@mixin sm-device {
+  @media all and (min-width: #{$sm-breakpoint}) {
+    @content;
+  }
+}
+// Medium devices
+@mixin md-device {
+    @media all and (min-width: #{$md-breakpoint}) {
+        @content;
+    }
+}
+// Large devices
+@mixin lg-device {
+    @media all and (min-width: #{$lg-breakpoint}) {
+        @content;
+    }
+}
+
+// Browser specific targets
+@mixin ie_only {
+    // ie 11
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    	@content;
+    }
+    // edge
+    @supports (-ms-ime-align:auto) {
+        @content;
+    }
+}
+@mixin edge_only {
+    @supports (-ms-ime-align:auto) {
+        @content;
+    }
+}
+@mixin firefox_only {
+    @-moz-document url-prefix() {
+    	@content;
+    }
+}

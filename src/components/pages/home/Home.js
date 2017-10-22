@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../organisms/header/Header';
 import Topic from '../../organisms/topic/Topic';
+import GridExample from '../../organisms/grid-example/GridExample';
 
 class Home extends Component {
   render() {
@@ -19,11 +20,11 @@ class Home extends Component {
           </Topic>
           <Topic title="The Grid System">
             <p>
-              Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis amet minim in. Exercitation nostrud occaecat consectetur sit est adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua dolor exercitation nisi amet adipisicing ea reprehenderit culpa aliqua minim ut. Et aliquip veniam pariatur veniam excepteur deserunt duis voluptate. Esse magna laboris ullamco quis incididunt deserunt laboris qui nulla.
+              The grid is a 12-column fluid grid similar to bootstrap.
+              The syntax is simple and it makes coding responsive
+              much easier. Go ahead, resize the browser.
             </p>
-            <p>
-              Voluptate culpa ullamco proident nulla elit aute sit laboris mollit in. Occaecat consequat dolor excepteur velit exercitation deserunt eu id est enim cillum pariatur culpa esse excepteur laborum non. Elit officia consequat ad aliqua velit adipisicing officia nulla.
-            </p>
+            <GridExample />
           </Topic>
           <Topic title="Typography">
             <p>

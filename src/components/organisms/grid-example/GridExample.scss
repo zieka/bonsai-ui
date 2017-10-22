@@ -1,0 +1,12 @@
+@import '../../../assets/bonsai/_variables.scss';
+
+.grid-example .row > div {
+  background-color: $light-grey;
+  border-radius: $border-radius;
+  border: $standard-border-width solid #fff;
+  text-align: center;
+  padding: .66em 0;
+  margin-bottom: 1em;
+  font-size: .66em;
+  box-sizing: border-box;
+}
