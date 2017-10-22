@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div className="header">
         <header className="header__header">
-          <img src={logo} className="header__logo" alt="logo" />
+          <img src={this.props.logo || logo} className="header__logo" alt="logo" />
           <h1 className="header__title">Welcome to Bonsai UI</h1>
         </header>
       </div>
