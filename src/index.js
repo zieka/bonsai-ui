@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import { BrowserRouter } from 'react-router-dom'
 
-import './assets/bonsai/bonsai.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 

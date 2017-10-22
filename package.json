@@ -12,8 +12,9 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src -o src --recursive",
-    "watch-css": "npm run build-css && node-sass-chokidar src -o src --watch --recursive",
+    "build-css": "node-sass-chokidar src -o src --recursive && node-sass-chokidar src/assets/bonsai/ -o public/ --recursive",
+    "watch-bonsai": "node-sass-chokidar src/assets/bonsai/ -o public/ --watch --recursive",
+    "watch-css": "npm run build-css && npm run watch-bonsai && node-sass-chokidar src -o src --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
