@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../organisms/header/Header';
+import Banner from '../../organisms/banner/Banner';
 import Topic from '../../organisms/topic/Topic';
 import GridExample from '../../organisms/grid-example/GridExample';
 
@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
         <div>
-          <Header logo="./logo.svg"/>
+          <Banner logo="./logo.svg"/>
           <Topic title="Why Bonsai?">
             <p>
               Large component libraries and UI frameworks tend to offer more than
