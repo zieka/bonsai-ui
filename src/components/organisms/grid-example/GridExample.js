@@ -19,20 +19,20 @@ const codeExample = `
 `;
 
 const codeExample2 =`
-<div className="row">
-  <div className="col-6">col-6</div>
-  <div className="col-6">col-6</div>
+<div class="row">
+  <div class="col-6">col-6</div>
+  <div class="col-6">col-6</div>
 </div>
-<div className="row">
-  <div className="col-6 col-sm-3">col-6 col-sm-3</div>
-  <div className="col-6 col-sm-3">col-6 col-sm-3</div>
-  <div className="col-6 col-sm-3">col-6 col-sm-3</div>
-  <div className="col-6 col-sm-3">col-6 col-sm-3</div>
+<div class="row">
+  <div class="col-6 col-sm-3">col-6 col-sm-3</div>
+  <div class="col-6 col-sm-3">col-6 col-sm-3</div>
+  <div class="col-6 col-sm-3">col-6 col-sm-3</div>
+  <div class="col-6 col-sm-3">col-6 col-sm-3</div>
 </div>
-<div className="row">
-  <div className="col-12 col-lg-3">col-12 col-lg-3</div>
-  <div className="col-12 col-lg-6">col-12 col-lg-6</div>
-  <div className="col-12 col-lg-3">col-12 col-lg-3</div>
+<div class="row">
+  <div class="col-12 col-lg-3">col-12 col-lg-3</div>
+  <div class="col-12 col-lg-6">col-12 col-lg-6</div>
+  <div class="col-12 col-lg-3">col-12 col-lg-3</div>
 </div>
 
 `;
