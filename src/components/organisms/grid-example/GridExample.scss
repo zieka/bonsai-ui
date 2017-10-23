@@ -5,8 +5,10 @@
   border-radius: $border-radius;
   border: $standard-border-width solid #fff;
   text-align: center;
-  padding: .66rem 0;
+  padding: .33rem 0;
   margin-bottom: .66rem;
   font-size: .66rem;
   box-sizing: border-box;
+  height: 1.66rem;
+  max-height: 1.66rem;
 }
