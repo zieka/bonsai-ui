@@ -23,11 +23,6 @@ class Home extends Component {
             </p>
           </Topic>
           <Topic title="The Grid System">
-            <p>
-              The grid is a 12-column fluid grid similar to bootstrap.
-              The syntax is simple and it makes coding responsive
-              much easier. Go ahead, resize the browser.
-            </p>
             <GridExample />
           </Topic>
           <Topic title="Typography">

@@ -30,7 +30,6 @@ $columns: 12;
 
 @mixin col-sm-x {
   @for $i from 1 through $columns {
-      .col-sm-#{$i} { @extend %float-styles; }
       .col-sm-#{$i} {
         @include sm-device {
           flex: 0 0 percentage($i/$columns);
@@ -44,7 +43,6 @@ $columns: 12;
 
 @mixin col-md-x {
   @for $i from 1 through $columns {
-      .col-md-#{$i} { @extend %float-styles; }
       .col-md-#{$i} {
         @include md-device {
           flex: 0 0 percentage($i/$columns);
@@ -58,7 +56,6 @@ $columns: 12;
 
 @mixin col-lg-x {
   @for $i from 1 through $columns {
-      .col-lg-#{$i} { @extend %float-styles; }
       .col-lg-#{$i} {
         @include lg-device {
           flex: 0 0 percentage($i/$columns);
