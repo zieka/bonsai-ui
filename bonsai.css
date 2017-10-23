@@ -4,6 +4,28 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px; }
 
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: .1rem;
+  font-weight: 100; }
+
+h1 {
+  font-size: 2.33334rem; }
+
+h2 {
+  font-size: 2.0rem; }
+
+h3 {
+  font-size: 1.66667rem; }
+
+h4 {
+  font-size: 1.33334rem; }
+
+h5 {
+  font-size: 1.0rem; }
+
+h6 {
+  font-size: 0.66667rem; }
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
