@@ -21,6 +21,14 @@ class Home extends Component {
             <p>
               If building sites with simple, clean, and lightweight interfaces is your goal, Bonsai may be for you.
             </p>
+            <div className="row" style={{'margin-top':'2rem'}}>
+              <img className="col-3" src="./jquery-free.svg" alt="JQUERY FREE" height="92"></img>
+              <img className="col-3" src="./svg-friendly.svg" alt="SVG FRIENDLY" height="92"></img>
+              <img className="col-3" src="./pro-sass.svg" alt="PRO SASS" height="92"></img>
+              <img className="col-3" src="./sketch-assets.svg" alt="SKETCH ASSETS" height="92"></img>
+            </div>
+
+
           </Topic>
           <Topic title="The Grid System">
             <GridExample />
