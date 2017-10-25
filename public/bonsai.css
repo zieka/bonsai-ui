@@ -292,10 +292,10 @@ h6 {
   .button:active {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
   .button[disabled] {
-    background-color: #e6e6e6 !important;
+    background-color: #e0e0e0 !important;
     box-shadow: none !important;
     color: #b1a0a0 !important;
-    border-color: #bbb !important;
+    border-color: #d8d8d8 !important;
     cursor: not-allowed !important; }
   .button.button--fill, .button.button--danger {
     color: #fff; }
