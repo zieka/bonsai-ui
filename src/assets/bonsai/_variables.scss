@@ -1,7 +1,7 @@
 $primary:                                   hsl(111, 44%, 50%);
 
-$primary--dark:                             darken($primary, 15%);
-$primary--light:                            lighten($primary, 15%);
+$primary--dark:                             darken($primary, 14%);
+$primary--light:                            lighten($primary, 14%);
 
 // interesting angles of primary color
 $primary--rotate-30:        adjust-hue($primary, 30);
@@ -43,5 +43,5 @@ $font-family:                               "Raleway", "HelveticaNeue", "Helveti
 $font-size:                                 16px;
 
 // shadows
-$shadow-first-level:                        0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
-$shadow-second-level:                       0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+$shadow-higher-level:                        0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
+$shadow-lower-level:                       0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);

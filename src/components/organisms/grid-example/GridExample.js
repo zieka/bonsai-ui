@@ -45,8 +45,8 @@ class GridExample extends Component {
           The grid is a 12-column fluid grid similar to the one found in bootstrap.
         </p>
         <p>
-          The base class <span style={{'white-space': 'nowrap'}}>col-<i>width
-          </i></span> should be used to layout your site at the smallest of
+          The base class <code style={{'white-space': 'nowrap'}}>col-<i>width
+        </i></code> should be used to layout your site at the smallest of
           supported mobile resolutions.
         </p>
         <div className="grid-example">
@@ -87,8 +87,8 @@ class GridExample extends Component {
         <CodeSnippet code={codeExample} lang="html"/>
         <p>
           If you want the layout to change as you design for larger resolutions
-          you can provide supplementary classes <span style={{'white-space': 'nowrap'}}>
-          col-<i>breakpoint</i>-<i>width</i></span>.
+          you can provide supplementary classes <code style={{'white-space': 'nowrap'}}>
+          col-<i>breakpoint</i>-<i>width</i></code>.
         </p>
         <p>
           Resize the browser and have a look:

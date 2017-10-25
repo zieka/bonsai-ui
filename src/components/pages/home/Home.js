@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Banner from '../../organisms/banner/Banner';
 import Topic from '../../organisms/topic/Topic';
 import GridExample from '../../organisms/grid-example/GridExample';
+import ButtonExample from '../../organisms/button-example/ButtonExample';
+import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
+
+const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`;
 
 class Home extends Component {
   render() {
@@ -35,26 +39,26 @@ class Home extends Component {
           </Topic>
           <Topic title="Typography">
             <p>
-              Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single &lt;html&gt; font-size property.
-              The typography base is Raleway served by Google.
+              Type is all set with the rems, so font-sizes and spacial relationships
+              can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property.
             </p>
-
-            <h1>Heading 1 &lt;h1&gt;</h1>
-            <h2>Heading 2 &lt;h2&gt;</h2>
-            <h3>Heading 3 &lt;h3&gt;</h3>
-            <h4>Heading 4 &lt;h4&gt;</h4>
-            <h5>Heading 5 &lt;h5&gt;</h5>
-            <h6>Heading 6 &lt;h6&gt;</h6>
-          </Topic>
-          <Topic title="Inputs">
+            <div style={{'margin-bottom': '3rem'}}>
+              <h1>Heading 1 &lt;h1&gt;</h1>
+              <h2>Heading 2 &lt;h2&gt;</h2>
+              <h3>Heading 3 &lt;h3&gt;</h3>
+              <h4>Heading 4 &lt;h4&gt;</h4>
+              <h5>Heading 5 &lt;h5&gt;</h5>
+              <h6>Heading 6 &lt;h6&gt;</h6>
+            </div>
             <p>
-              Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis amet minim in. Exercitation nostrud occaecat consectetur sit est adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua dolor exercitation nisi amet adipisicing ea reprehenderit culpa aliqua minim ut. Et aliquip veniam pariatur veniam excepteur deserunt duis voluptate. Esse magna laboris ullamco quis incididunt deserunt laboris qui nulla.
+              The typography base is Raleway served by Google:
             </p>
-            <p>
-              Voluptate culpa ullamco proident nulla elit aute sit laboris mollit in. Occaecat consequat dolor excepteur velit exercitation deserunt eu id est enim cillum pariatur culpa esse excepteur laborum non. Elit officia consequat ad aliqua velit adipisicing officia nulla.
-            </p>
+            <CodeSnippet code={fontCss} lang="html"/>
           </Topic>
           <Topic title="Buttons">
+            <ButtonExample />
+          </Topic>
+          <Topic title="Inputs">
             <p>
               Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis amet minim in. Exercitation nostrud occaecat consectetur sit est adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua dolor exercitation nisi amet adipisicing ea reprehenderit culpa aliqua minim ut. Et aliquip veniam pariatur veniam excepteur deserunt duis voluptate. Esse magna laboris ullamco quis incididunt deserunt laboris qui nulla.
             </p>
