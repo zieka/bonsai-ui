@@ -1,6 +1,7 @@
 @import './_variables.scss';
 
-$button-fill-color: #4d90fe;
+$button-fill-color: $info;
+$button-danger-color: $danger;
 $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
               0px 0.1rem 1.33rem rgba(0, 0, 0, 0.1),
               0px 0.1rem .33rem rgba(0, 0, 0, 0.1);
@@ -30,32 +31,49 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
     outline: 0;
     box-shadow: $shadow-higher-level;
   }
+
   &:active {
     box-shadow: $shadow-lower-level;
   }
+
   &[disabled] {
-    background-color: #e6e6e6 !important;
+    background-color: #e0e0e0 !important;
     box-shadow: none !important;
     color: #b1a0a0 !important;
-    border-color: #bbb !important;
+    border-color: darken(#e0e0e0, 3%); !important;
     cursor: not-allowed !important;
+  }
+
+  &.button--fill, &.button--danger {
+    color: #fff;
+    &:hover, &:focus{
+      text-shadow: $text-shadow;
+    }
+    &[disabled] {
+      box-shadow: none !important;
+      color: #fff !important;
+      cursor: not-allowed !important;
+      text-shadow: none;
+    }
   }
 
   &.button--fill {
     background-color: $button-fill-color;
     border-color: darken($button-fill-color, 3%);
-    color: #fff;
-    &:hover, &:focus{
-      text-shadow: $text-shadow;
-    }
 
     &[disabled] {
-      background-color: lighten($button-fill-color, 23%) !important;
-      box-shadow: none !important;
-      color: #fff !important;
-      border-color: lighten($button-fill-color, 20%) !important;
-      cursor: not-allowed !important;
-      text-shadow: none;
+      background-color: hsl(hue($button-fill-color), saturation($button-fill-color), 88%) !important;
+      border-color: hsl(hue($button-fill-color), saturation($button-fill-color), 85%) !important;
+    }
+  }
+
+  &.button--danger {
+    background-color: $button-danger-color;
+    border-color: darken($button-danger-color, 3%);
+
+    &[disabled] {
+      background-color: hsl(hue($button-danger-color), saturation($button-danger-color), 88%) !important;
+      border-color: hsl(hue($button-danger-color), saturation($button-danger-color), 85%) !important;
     }
   }
 }

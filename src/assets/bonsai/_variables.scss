@@ -22,9 +22,8 @@ $primary--rotate-330:       adjust-hue($primary, 330);
 
 // alert colors
 $success:                                   darken($primary, 5%);
-$danger:                                    darken($primary--rotate-225, 5%);
-$warning:                                   darken($primary--rotate-300, 5%);
-$info:                                      darken($primary--rotate-90, 5%);
+$danger:                                    #b50000;
+$info:                                      #4d90fe;
 
 // typography
 $text-color:                                #111;
