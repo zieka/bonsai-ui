@@ -1,8 +1,31 @@
 import React, { Component } from 'react';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 
-const codeExample = `<button class="button">Button</button>
-<button class="button" disabled>Button Disabled</button>
+const codeExample = `<form>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="io">
+        <label class="io__label" for="emailAddress" required>Your email</label>
+        <input class="io__control" type="email" placeholder="name@mail.com" id="emailAddress" />
+      </div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="io">
+        <label class="io__label" for="reason">Reason for Contacting</label>
+        <select class="io__control" id="reason" required>
+          <option value="" hidden>Select a Reason</option>
+          <option value="Option 1">General Question</option>
+          <option value="Option 2">Report Issue</option>
+          <option value="Option 3">Feedback</option>
+        </select>
+      </div>
+    </div>
+  </div>
+    <div class="io">
+      <label class="io__label" for="message" required>Message</label>
+      <textarea class="io__control" placeholder="Eiusmod est proident ..." id="message"></textarea>
+  </div>
+</form>
 `;
 
 const codeExample2 = `<button class="button button--fill">Fill</button>
@@ -19,30 +42,57 @@ class InputExample extends Component {
   render() {
     return (
       <div>
+        <p>
+          Bonsai uses the base class <code>io</code> to wrap an input control and it's label.
+        </p>
+        <p>
+          The class <code>io__label</code> can grant form styling to the label element,
+          while the class <code>io__control</code> can be applied to the actual input
+          control element:
+        </p>
         <form>
           <div className="row">
-            <div className="col-6">
-              <div className="input">
-                <label className="input__label" for="exampleEmailInput">Your email</label>
-                <input className="input__input" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" />
+            <div className="col-12 col-sm-6">
+              <div className="io">
+                <label className="io__label" for="emailAddress" required>Your email</label>
+                <input className="io__control" type="email" placeholder="name@mail.com" id="emailAddress" />
               </div>
             </div>
-            <div className="col-6">
-              <div className="input">
-                <label className="input__label" for="exampleRecipientInput">Reason for contacting</label>
-                <select className="input__input" id="exampleRecipientInput">
-                  <option value="Option 1">Questions</option>
-                  <option value="Option 2">Admiration</option>
-                  <option value="Option 3">Can I get your number?</option>
+            <div className="col-12 col-sm-6">
+              <div className="io">
+                <label className="io__label" for="reason">Reason for Contacting</label>
+                <select className="io__control" id="reason" required>
+                  <option value="" hidden>Select a Reason</option>
+                  <option value="Option 1">General Question</option>
+                  <option value="Option 2">Report Issue</option>
+                  <option value="Option 3">Feedback</option>
                 </select>
               </div>
             </div>
           </div>
-            <div className="input">
-              <label className="input__label" for="exampleMessage">Message</label>
-              <textarea className="input__input" placeholder={lorem} id="exampleMessage"></textarea>
+            <div className="io">
+              <label className="io__label" for="message" required>Message</label>
+              <textarea className="io__control" placeholder={lorem} id="message"></textarea>
           </div>
         </form>
+        <CodeSnippet code={codeExample} lang="html"/>
+          <p>
+            There are also styles for disabled or readonly attributes:
+          </p>
+          <div className="row">
+            <div className="col-12 col-sm-6">
+              <div className="io">
+                <label className="io__label" for="readOnlyExample" required>Read Only Example</label>
+                <input className="io__control" type="text" value="This text is the read only style" id="readOnlyExample" readonly="true"/>
+              </div>
+            </div>
+            <div className="col-12 col-sm-6">
+              <div className="io">
+                <label className="io__label" for="disabledExample" required>Disabled Example</label>
+                <input className="io__control" type="text" value="This text is the disabled style" id="disabledExample" disabled/>
+              </div>
+            </div>
+          </div>
       </div>
     );
   }

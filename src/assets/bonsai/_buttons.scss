@@ -6,15 +6,17 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
               0px 0.1rem 1.33rem rgba(0, 0, 0, 0.1),
               0px 0.1rem .33rem rgba(0, 0, 0, 0.1);
 
+$button-font-normalization: .66;
+
 .button {
   display: inline-block;
   height: 2rem;
-  padding: 0 .66667rem;
+  padding: 0 #{$button-font-normalization}rem;
   color: #555;
   text-align: center;
-  font-size: .66rem;
+  font-size: #{$button-font-normalization}rem;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: #{$button-font-normalization * 3}rem;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -37,11 +39,11 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
   }
 
   &[disabled] {
-    background-color: #e0e0e0 !important;
-    box-shadow: none !important;
-    color: #b1a0a0 !important;
-    border-color: darken(#e0e0e0, 3%) !important;
-    cursor: not-allowed !important;
+    background-color: #e0e0e0;
+    border-color: darken(#e0e0e0, 3%);
+    box-shadow: none;
+    color: #b1a0a0;
+    cursor: not-allowed;
   }
 
   &.button--fill, &.button--danger {
@@ -52,7 +54,7 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
     &[disabled] {
       box-shadow: none !important;
       color: #fff !important;
-      cursor: not-allowed !important;
+      cursor: not-allowed;
       text-shadow: none;
     }
   }
@@ -62,8 +64,8 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
     border-color: darken($button-fill-color, 3%);
 
     &[disabled] {
-      background-color: hsl(hue($button-fill-color), saturation($button-fill-color), 88%) !important;
-      border-color: hsl(hue($button-fill-color), saturation($button-fill-color), 85%) !important;
+      background-color: hsl(hue($button-fill-color), saturation($button-fill-color), 88%);
+      border-color: hsl(hue($button-fill-color), saturation($button-fill-color), 85%);
     }
   }
 
@@ -72,8 +74,8 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
     border-color: darken($button-danger-color, 3%);
 
     &[disabled] {
-      background-color: hsl(hue($button-danger-color), saturation($button-danger-color), 88%) !important;
-      border-color: hsl(hue($button-danger-color), saturation($button-danger-color), 85%) !important;
+      background-color: hsl(hue($button-danger-color), saturation($button-danger-color), 88%);
+      border-color: hsl(hue($button-danger-color), saturation($button-danger-color), 85%);
     }
   }
 }
