@@ -3,6 +3,7 @@ import Banner from '../../organisms/banner/Banner';
 import Topic from '../../organisms/topic/Topic';
 import GridExample from '../../organisms/grid-example/GridExample';
 import ButtonExample from '../../organisms/button-example/ButtonExample';
+import InputExample from '../../organisms/input-example/InputExample';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 
 const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`;
@@ -51,7 +52,7 @@ class Home extends Component {
               <h6>Heading 6 &lt;h6&gt;</h6>
             </div>
             <p>
-              The typography base is Raleway served by Google:
+              The recommended font is Raleway served by Google:
             </p>
             <CodeSnippet code={fontCss} lang="html"/>
           </Topic>
@@ -59,12 +60,7 @@ class Home extends Component {
             <ButtonExample />
           </Topic>
           <Topic title="Inputs">
-            <p>
-              Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis amet minim in. Exercitation nostrud occaecat consectetur sit est adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua dolor exercitation nisi amet adipisicing ea reprehenderit culpa aliqua minim ut. Et aliquip veniam pariatur veniam excepteur deserunt duis voluptate. Esse magna laboris ullamco quis incididunt deserunt laboris qui nulla.
-            </p>
-            <p>
-              Voluptate culpa ullamco proident nulla elit aute sit laboris mollit in. Occaecat consequat dolor excepteur velit exercitation deserunt eu id est enim cillum pariatur culpa esse excepteur laborum non. Elit officia consequat ad aliqua velit adipisicing officia nulla.
-            </p>
+            <InputExample />
           </Topic>
           <Topic title="Cards"> 
             <p>
