@@ -16,6 +16,7 @@ $columns: 12;
   float: left;
 }
 
+
 @mixin col-x {
   @for $i from 1 through $columns {
       .col-#{$i} { @extend %float-styles; }
@@ -31,39 +32,38 @@ $columns: 12;
 @mixin col-sm-x {
   @for $i from 1 through $columns {
       .col-sm-#{$i} {
-        @include sm-device {
-          flex: 0 0 percentage($i/$columns);
-          max-width: percentage($i/$columns);
-        }
+        flex: 0 0 percentage($i/$columns);
+        max-width: percentage($i/$columns);
       }
   }
 }
 
-@include col-sm-x;
+@include sm-device {
+  @include col-sm-x;
+}
 
 @mixin col-md-x {
   @for $i from 1 through $columns {
       .col-md-#{$i} {
-        @include md-device {
-          flex: 0 0 percentage($i/$columns);
-          max-width: percentage($i/$columns);
-        }
+        flex: 0 0 percentage($i/$columns);
+        max-width: percentage($i/$columns);
       }
   }
 }
 
-@include col-md-x;
+@include md-device {
+  @include col-md-x;
+}
 
 @mixin col-lg-x {
   @for $i from 1 through $columns {
       .col-lg-#{$i} {
-        @include lg-device {
-          flex: 0 0 percentage($i/$columns);
-          max-width: percentage($i/$columns);
-        }
+        flex: 0 0 percentage($i/$columns);
+        max-width: percentage($i/$columns);  
       }
   }
 }
 
-
-@include col-lg-x;
+@include lg-device {
+  @include col-lg-x;
+}
