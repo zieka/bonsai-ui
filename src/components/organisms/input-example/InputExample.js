@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
+import IOInput from '../../molecules/io-input/IOInput';
 
 const codeExample = `<form>
   <div class="row">
@@ -61,10 +62,11 @@ class InputExample extends Component {
         <form>
           <div className="row">
             <div className="col-12 col-sm-6">
-              <div className="io">
-                <label className="io__label" for="emailAddress" required>Your email</label>
-                <input className="io__control" type="email" placeholder="name@mail.com" id="emailAddress" />
-              </div>
+              <IOInput
+                inputId="emailAddress"
+                placeholder="name@mail.com"
+                type="email"
+                label="Your email"/>
             </div>
             <div className="col-12 col-sm-6">
               <div className="io">
@@ -89,16 +91,20 @@ class InputExample extends Component {
         </p>
         <div className="row">
           <div className="col-12 col-sm-6">
-            <div className="io">
-              <label className="io__label" for="readOnlyExample" required>Read Only Example</label>
-              <input className="io__control" type="text" value="This text is the read only style" id="readOnlyExample" readonly="true"/>
-            </div>
+            <IOInput
+              inputId="readOnlyExample"
+              type="text"
+              label="Read Only Example"
+              value="This text is the read only style"
+              readonly="true"/>
           </div>
           <div className="col-12 col-sm-6">
-            <div className="io">
-              <label className="io__label" for="disabledExample" required>Disabled Example</label>
-              <input className="io__control" type="text" value="This text is the disabled style" id="disabledExample" disabled/>
-            </div>
+            <IOInput
+              inputId="disabledExample"
+              type="text"
+              label="Disabled Example"
+              value="This text is the disabled style"
+              disabled="true"/>
           </div>
         </div>
         <CodeSnippet code={codeExample2} lang="html"/>
