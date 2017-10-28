@@ -28,12 +28,20 @@ const codeExample = `<form>
 </form>
 `;
 
-const codeExample2 = `<button class="button button--fill">Fill</button>
-<button class="button button--fill" disabled>Fill Disabled</button>
-`;
-
-const codeExample3 = `<button class="button button--danger">Danger</button>
-<button class="button button--danger" disabled>Danger Disabled</button>
+const codeExample2 = `<div class="row">
+  <div class="col-12 col-sm-6">
+    <div class="io">
+      <label class="io__label" for="readOnlyExample" required>Read Only Example</label>
+      <input class="io__control" type="text" value="This text is the read only style" id="readOnlyExample" readonly="true"/>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6">
+    <div class="io">
+      <label class="io__label" for="disabledExample" required>Disabled Example</label>
+      <input class="io__control" type="text" value="This text is the disabled style" id="disabledExample" disabled/>
+    </div>
+  </div>
+</div>
 `;
 
 const lorem = `Eiusmod est proident labore consequat reprehenderit fugiat consequat culpa do veniam minim. In magna velit Lorem nostrud id sint in labore anim esse. Quis duis exercitation consectetur ad id elit est fugiat. Veniam sint veniam et eu irure consectetur ea labore irure labore qui incididunt adipisicing nulla nulla incididunt. Lorem exercitation aliquip est ullamco quis aute veniam nostrud amet consectetur esse cillum ex. Et enim excepteur pariatur id sint commodo dolore excepteur occaecat reprehenderit ut.`
@@ -76,23 +84,24 @@ class InputExample extends Component {
           </div>
         </form>
         <CodeSnippet code={codeExample} lang="html"/>
-          <p>
-            There are also styles for disabled or readonly attributes:
-          </p>
-          <div className="row">
-            <div className="col-12 col-sm-6">
-              <div className="io">
-                <label className="io__label" for="readOnlyExample" required>Read Only Example</label>
-                <input className="io__control" type="text" value="This text is the read only style" id="readOnlyExample" readonly="true"/>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6">
-              <div className="io">
-                <label className="io__label" for="disabledExample" required>Disabled Example</label>
-                <input className="io__control" type="text" value="This text is the disabled style" id="disabledExample" disabled/>
-              </div>
+        <p>
+          There are also styles for disabled or readonly attributes:
+        </p>
+        <div className="row">
+          <div className="col-12 col-sm-6">
+            <div className="io">
+              <label className="io__label" for="readOnlyExample" required>Read Only Example</label>
+              <input className="io__control" type="text" value="This text is the read only style" id="readOnlyExample" readonly="true"/>
             </div>
           </div>
+          <div className="col-12 col-sm-6">
+            <div className="io">
+              <label className="io__label" for="disabledExample" required>Disabled Example</label>
+              <input className="io__control" type="text" value="This text is the disabled style" id="disabledExample" disabled/>
+            </div>
+          </div>
+        </div>
+        <CodeSnippet code={codeExample2} lang="html"/>
       </div>
     );
   }
