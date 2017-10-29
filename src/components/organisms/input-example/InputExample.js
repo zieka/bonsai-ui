@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import IOInput from '../../molecules/io-input/IOInput';
+import IOTextArea from '../../molecules/io-textarea/IOTextArea';
 
 const codeExample = `<form>
   <div class="row">
@@ -62,11 +63,10 @@ class InputExample extends Component {
         <form>
           <div className="row">
             <div className="col-12 col-sm-6">
-              <IOInput
-                inputId="emailAddress"
-                placeholder="name@mail.com"
-                type="email"
-                label="Your email"/>
+              <IOInput  inputId="emailAddress"
+                        placeholder="name@mail.com"
+                        type="email"
+                        label="Your email"/>
             </div>
             <div className="col-12 col-sm-6">
               <div className="io">
@@ -80,10 +80,7 @@ class InputExample extends Component {
               </div>
             </div>
           </div>
-            <div className="io">
-              <label className="io__label" for="message" required>Message</label>
-              <textarea className="io__control" placeholder={lorem} id="message"></textarea>
-          </div>
+          <IOTextArea className="io__control" placeholder={lorem} id="message" label="message"></IOTextArea>
         </form>
         <CodeSnippet code={codeExample} lang="html"/>
         <p>
@@ -91,20 +88,18 @@ class InputExample extends Component {
         </p>
         <div className="row">
           <div className="col-12 col-sm-6">
-            <IOInput
-              inputId="readOnlyExample"
-              type="text"
-              label="Read Only Example"
-              value="This text is the read only style"
-              readonly="true"/>
+            <IOInput  inputId="readOnlyExample"
+                      type="text"
+                      label="Read Only Example"
+                      value="This text is the read only style"
+                      readonly="true"/>
           </div>
           <div className="col-12 col-sm-6">
-            <IOInput
-              inputId="disabledExample"
-              type="text"
-              label="Disabled Example"
-              value="This text is the disabled style"
-              disabled="true"/>
+            <IOInput  inputId="disabledExample"
+                      type="text"
+                      label="Disabled Example"
+                      value="This text is the disabled style"
+                      disabled="true"/>
           </div>
         </div>
         <CodeSnippet code={codeExample2} lang="html"/>
