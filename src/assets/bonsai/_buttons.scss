@@ -23,13 +23,11 @@ $button-font-normalization: .66;
   white-space: nowrap;
   background-color: transparent;
   border-radius: $border-radius;
-  border: 1px solid #bbb;
+  border: 1px solid #a1a1a1;
   cursor: pointer;
   box-sizing: border-box;
 
   &:hover, &:focus {
-    color: #333;
-    border-color: #888;
     outline: 0;
     box-shadow: $shadow-higher-level;
   }
@@ -42,23 +40,21 @@ $button-font-normalization: .66;
     background-color: #e0e0e0;
     border-color: darken(#e0e0e0, 3%);
     box-shadow: none;
-    color: #b1a0a0;
+    color: #fff;
     cursor: not-allowed;
   }
 
-  &.button--fill, &.button--danger {
+  &--fill, &--danger {
     color: #fff;
     &:hover, &:focus{
       text-shadow: $text-shadow;
     }
     &[disabled] {
-      box-shadow: none !important;
-      cursor: not-allowed;
       text-shadow: none;
     }
   }
 
-  &.button--fill {
+  &--fill {
     background-color: $button-fill-color;
     border-color: darken($button-fill-color, 3%);
 
@@ -68,7 +64,7 @@ $button-font-normalization: .66;
     }
   }
 
-  &.button--danger {
+  &--danger {
     background-color: $button-danger-color;
     border-color: darken($button-danger-color, 3%);
 

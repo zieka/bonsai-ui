@@ -80,7 +80,7 @@ class InputExample extends Component {
               </div>
             </div>
           </div>
-          <IOTextArea className="io__control" placeholder={lorem} id="message" label="message"></IOTextArea>
+          <IOTextArea className="io__control" placeholder={lorem} inputId="message" label="message"></IOTextArea>
         </form>
         <CodeSnippet code={codeExample} lang="html"/>
         <p>
