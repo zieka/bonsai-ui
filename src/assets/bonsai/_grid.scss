@@ -29,9 +29,9 @@ $columns: 12;
 
 @include col-x;
 
-@mixin col-sm-x {
+@mixin sm-x {
   @for $i from 1 through $columns {
-      .col-sm-#{$i} {
+      .sm-#{$i} {
         flex: 0 0 percentage($i/$columns);
         max-width: percentage($i/$columns);
       }
@@ -39,12 +39,12 @@ $columns: 12;
 }
 
 @include sm-device {
-  @include col-sm-x;
+  @include sm-x;
 }
 
-@mixin col-md-x {
+@mixin md-x {
   @for $i from 1 through $columns {
-      .col-md-#{$i} {
+      .md-#{$i} {
         flex: 0 0 percentage($i/$columns);
         max-width: percentage($i/$columns);
       }
@@ -52,18 +52,18 @@ $columns: 12;
 }
 
 @include md-device {
-  @include col-md-x;
+  @include md-x;
 }
 
-@mixin col-lg-x {
+@mixin lg-x {
   @for $i from 1 through $columns {
-      .col-lg-#{$i} {
+      .lg-#{$i} {
         flex: 0 0 percentage($i/$columns);
-        max-width: percentage($i/$columns);  
+        max-width: percentage($i/$columns);
       }
   }
 }
 
 @include lg-device {
-  @include col-lg-x;
+  @include lg-x;
 }
