@@ -76,17 +76,17 @@ class Home extends Component {
             </p>
             <div className="row">
               <div className="col-12 md-4" style={spacingStyle}>
-                <Card title="Plain Title">
+                <Card title="Bonsai">
                   <p>This card has a title text and no title background image.</p>
                 </Card>
               </div>
               <div className="col-12 md-4" style={spacingStyle}>
-                <Card height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847">
+                <Card height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
                   <p>This card has no title text but has a title background image.</p>
                 </Card>
               </div>
               <div className="col-12 md-4" style={spacingStyle}>
-                <Card title="Lorem" height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847">
+                <Card title="Bonsai" height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
                   <p>This card has a title text and a title background image.</p>
                 </Card>
               </div>
@@ -96,12 +96,12 @@ class Home extends Component {
             </p>
             <div className="row">
               <div className="col-12 md-6" style={spacingStyle}>
-                <Card height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847" shadow="true">
+                <Card height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" shadow="true">
                   <p>This card has no title text but has a title background image.</p>
                 </Card>
               </div>
               <div className="col-12 md-6" style={spacingStyle}>
-                <Card title="Lorem" height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847" shadow="true">
+                <Card title="Bonsai" height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" shadow="true">
                   <p>This card has a title text and a title background image.</p>
                 </Card>
               </div>
