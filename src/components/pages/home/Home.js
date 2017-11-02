@@ -5,8 +5,16 @@ import GridExample from '../../organisms/grid-example/GridExample';
 import ButtonExample from '../../organisms/button-example/ButtonExample';
 import InputExample from '../../organisms/input-example/InputExample';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
+import Card from '../../molecules/card/Card';
 
 const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`;
+
+const spacingStyle = {
+  "box-sizing": "border-box",
+  "border": "1px solid #fff",
+  "margin-bottom": ".33rem",
+  "font-size": ".75rem"
+};
 
 class Home extends Component {
   render() {
@@ -64,11 +72,40 @@ class Home extends Component {
           </Topic>
           <Topic title="Cards"> 
             <p>
-              Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis amet minim in. Exercitation nostrud occaecat consectetur sit est adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua dolor exercitation nisi amet adipisicing ea reprehenderit culpa aliqua minim ut. Et aliquip veniam pariatur veniam excepteur deserunt duis voluptate. Esse magna laboris ullamco quis incididunt deserunt laboris qui nulla.
+              Cards can be used to build dialogues or prompts as well as display grouped information:
             </p>
+            <div className="row">
+              <div className="col-12 md-4" style={spacingStyle}>
+                <Card title="Plain Title">
+                  <p>This card has a title text and no title background image.</p>
+                </Card>
+              </div>
+              <div className="col-12 md-4" style={spacingStyle}>
+                <Card height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847">
+                  <p>This card has no title text but has a title background image.</p>
+                </Card>
+              </div>
+              <div className="col-12 md-4" style={spacingStyle}>
+                <Card title="Lorem" height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847">
+                  <p>This card has a title text and a title background image.</p>
+                </Card>
+              </div>
+            </div>
             <p>
-              Voluptate culpa ullamco proident nulla elit aute sit laboris mollit in. Occaecat consequat dolor excepteur velit exercitation deserunt eu id est enim cillum pariatur culpa esse excepteur laborum non. Elit officia consequat ad aliqua velit adipisicing officia nulla.
+              Cards can also have a default shadow using the card--shadow class:
             </p>
+            <div className="row">
+              <div className="col-12 md-6" style={spacingStyle}>
+                <Card height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847" shadow="true">
+                  <p>This card has no title text but has a title background image.</p>
+                </Card>
+              </div>
+              <div className="col-12 md-6" style={spacingStyle}>
+                <Card title="Lorem" height='150px' imgSrc="https://placeholdit.co//i/555x150?bg=58b847" shadow="true">
+                  <p>This card has a title text and a title background image.</p>
+                </Card>
+              </div>
+            </div>
           </Topic>
           <Topic title="Loading">
             <p>

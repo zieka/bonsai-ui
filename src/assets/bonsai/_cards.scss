@@ -1,0 +1,33 @@
+@import './_variables.scss';
+
+.card {
+  border: $standard-border;
+  border-radius: $border-radius;
+  background-color: #eaeaea;
+
+  &--shadow{
+    box-shadow: $shadow-lower-level;
+  }
+
+  &__title {
+    color: #fff;
+    height: 38px;
+    background-color: $disabled-color;
+  }
+
+  &__title-text{
+    margin: 0;
+    padding: 0 1rem;
+    position: relative;
+    top: calc(100% - 2.33rem);
+  }
+
+  &__content{
+    padding: 0 1rem;
+
+  }
+
+  &:hover {
+    box-shadow: $shadow-higher-level;
+  }
+}

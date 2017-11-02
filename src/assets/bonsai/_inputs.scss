@@ -48,7 +48,7 @@
   &:hover, &:focus {
     border: 1px solid $info;
     outline: 0;
-    box-shadow: $shadow-higher-level;
+    box-shadow: $shadow-lower-level;
   }
 }
 
