@@ -5,7 +5,7 @@
   border-radius: $border-radius;
   background-color: #eaeaea;
 
-  &--shadow{
+  &--shadow {
     box-shadow: $shadow-lower-level;
   }
 
@@ -15,19 +15,16 @@
     background-color: $disabled-color;
   }
 
-  &__title-text{
+  &__title-text {
     margin: 0;
     padding: 0 1rem;
     position: relative;
     top: calc(100% - 2.33rem);
   }
 
-  &__content{
+  &__content {
     padding: 0 1rem;
 
   }
 
-  &:hover {
-    box-shadow: $shadow-higher-level;
-  }
 }
