@@ -12,8 +12,10 @@ const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,6
 const spacingStyle = {
   "box-sizing": "border-box",
   "border": "1px solid #fff",
-  "margin-bottom": ".33rem",
-  "font-size": ".75rem"
+  "margin-bottom": ".66rem",
+  "font-size": ".75rem",
+  "margin-left": "auto",
+  "margin-right": "auto"
 };
 
 class Home extends Component {
@@ -75,17 +77,17 @@ class Home extends Component {
               Cards can be used to build dialogues or prompts as well as display grouped information:
             </p>
             <div className="row">
-              <div className="col-12 md-4" style={spacingStyle}>
+              <div className="col-12 sm-4" style={spacingStyle}>
                 <Card title="Bonsai">
                   <p>This card has a title text and no title background image.</p>
                 </Card>
               </div>
-              <div className="col-12 md-4" style={spacingStyle}>
+              <div className="col-12 sm-4" style={spacingStyle}>
                 <Card height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
                   <p>This card has no title text but has a title background image.</p>
                 </Card>
               </div>
-              <div className="col-12 md-4" style={spacingStyle}>
+              <div className="col-12 sm-4" style={spacingStyle}>
                 <Card title="Bonsai" height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
                   <p>This card has a title text and a title background image.</p>
                 </Card>
@@ -95,14 +97,9 @@ class Home extends Component {
               Cards can also have a default shadow using the card--shadow class:
             </p>
             <div className="row">
-              <div className="col-12 md-6" style={spacingStyle}>
-                <Card height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" shadow="true">
-                  <p>This card has no title text but has a title background image.</p>
-                </Card>
-              </div>
-              <div className="col-12 md-6" style={spacingStyle}>
-                <Card title="Bonsai" height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" shadow="true">
-                  <p>This card has a title text and a title background image.</p>
+              <div className="col-12 sm-6" style={spacingStyle}>
+                <Card title="Bonsai" height='250px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" shadow="true">
+                  <p>This card has shadow effect to lift it off the page.</p>
                 </Card>
               </div>
             </div>
