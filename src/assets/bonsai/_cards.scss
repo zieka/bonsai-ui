@@ -5,13 +5,10 @@
   border-radius: $border-radius;
   background-color: #eaeaea;
 
-  &--shadow {
-    box-shadow: $shadow-lower-level;
-  }
-
   &__title {
     color: #fff;
-    height: 38px;
+    height: 3rem;
+    border-radius: $border-radius - 1px $border-radius - 1px 0 0;
     background-color: $disabled-color;
   }
 
@@ -19,7 +16,7 @@
     margin: 0;
     padding: 0 1rem;
     position: relative;
-    top: calc(100% - 2.33rem);
+    top: calc(100% - 2.5rem);
   }
 
   &__content {

@@ -53,18 +53,29 @@ class Home extends Component {
               Type is all set with the rems, so font-sizes and spacial relationships
               can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property.
             </p>
+            <p>
+              Font sizing uses the following h# classes:
+            </p>
             <div style={{'margin-bottom': '3rem'}}>
-              <h1>Heading 1 &lt;h1&gt;</h1>
-              <h2>Heading 2 &lt;h2&gt;</h2>
-              <h3>Heading 3 &lt;h3&gt;</h3>
-              <h4>Heading 4 &lt;h4&gt;</h4>
-              <h5>Heading 5 &lt;h5&gt;</h5>
-              <h6>Heading 6 &lt;h6&gt;</h6>
+              <h1 class="h1">&lt;h1 class="h1"&gt;</h1>
+              <h2 class="h2">&lt;h2 class="h2"&gt;</h2>
+              <h3 class="h3">&lt;h3 class="h3"&gt;</h3>
+              <h4 class="h4">&lt;h4 class="h4"&gt;</h4>
+              <h5 class="h5">&lt;h5 class="h5"&gt;</h5>
+              <h6 class="h6">&lt;h6 class="h6"&gt;</h6>
             </div>
             <p>
               The recommended font is Raleway served by Google:
             </p>
             <CodeSnippet code={fontCss} lang="html"/>
+            <p>
+              The shadow class can be used to add a standard box shadow to elements:
+            </p>
+            <div className="row">
+              <div className="col-12 sm-6" style={spacingStyle}>
+                <img class="shadow" src="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" />
+              </div>
+            </div>
           </Topic>
           <Topic title="Buttons">
             <ButtonExample />
@@ -90,16 +101,6 @@ class Home extends Component {
               <div className="col-12 sm-4" style={spacingStyle}>
                 <Card title="Bonsai" height='150px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
                   <p>This card has a title text and a title background image.</p>
-                </Card>
-              </div>
-            </div>
-            <p>
-              Cards can also have a default shadow using the card--shadow class:
-            </p>
-            <div className="row">
-              <div className="col-12 sm-6" style={spacingStyle}>
-                <Card title="Bonsai" height='250px' imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" shadow="true">
-                  <p>This card has shadow effect to lift it off the page.</p>
                 </Card>
               </div>
             </div>
