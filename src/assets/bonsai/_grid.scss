@@ -21,8 +21,8 @@ $columns: 12;
   @for $i from 1 through $columns {
       .col-#{$i} { @extend %float-styles; }
       .col-#{$i} {
-        flex: 0 0 percentage($i/$columns);
-        max-width: percentage($i/$columns);
+        flex: 0 0 to-fixed(percentage($i/$columns));
+        max-width: to-fixed(percentage($i/$columns));
       }
   }
 }
@@ -32,8 +32,8 @@ $columns: 12;
 @mixin sm-x {
   @for $i from 1 through $columns {
       .sm-#{$i} {
-        flex: 0 0 percentage($i/$columns);
-        max-width: percentage($i/$columns);
+        flex: 0 0 to-fixed(percentage($i/$columns));
+        max-width: to-fixed(percentage($i/$columns));
       }
   }
 }
@@ -45,8 +45,8 @@ $columns: 12;
 @mixin md-x {
   @for $i from 1 through $columns {
       .md-#{$i} {
-        flex: 0 0 percentage($i/$columns);
-        max-width: percentage($i/$columns);
+        flex: 0 0 to-fixed(percentage($i/$columns));
+        max-width: to-fixed(percentage($i/$columns));
       }
   }
 }
@@ -58,8 +58,8 @@ $columns: 12;
 @mixin lg-x {
   @for $i from 1 through $columns {
       .lg-#{$i} {
-        flex: 0 0 percentage($i/$columns);
-        max-width: percentage($i/$columns);
+        flex: 0 0 to-fixed(percentage($i/$columns));
+        max-width: to-fixed(percentage($i/$columns));
       }
   }
 }
