@@ -69,11 +69,20 @@ class Home extends Component {
             </p>
             <CodeSnippet code={fontCss} lang="html"/>
             <p>
-              The shadow class can be used to add a standard box shadow to elements:
+              The .shadow-l and .shadow-h classes can be used to add box shadows to elements.
+              The .shadow-l class adds a low level shadow meaning it will appear close to the origin plane:
             </p>
             <div className="row">
               <div className="col-12 sm-6" style={spacingStyle}>
-                <img class="shadow" src="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" />
+                <img class="shadow-l" src="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" alt="Bonsai with low shadow"/>
+              </div>
+            </div>
+            <p>
+              The .shadow-h class adds a high level shadow meaning it will appear further away from the origin plane than the lower shadow level:
+            </p>
+            <div className="row">
+              <div className="col-12 sm-6" style={spacingStyle}>
+                <img class="shadow-h" src="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg" alt="Bonsai with high shadow"/>
               </div>
             </div>
           </Topic>
