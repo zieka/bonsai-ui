@@ -7,7 +7,7 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
               0px 0.1rem 1.33rem rgba(0, 0, 0, 0.1),
               0px 0.1rem .33rem rgba(0, 0, 0, 0.1);
 
-$button-font-normalization: .66;
+$button-font-normalization: .67;
 
 .btn {
   display: inline-block;
@@ -15,7 +15,8 @@ $button-font-normalization: .66;
   padding: 0 #{$button-font-normalization}rem;
   color: #555;
   text-align: center;
-  font-size: #{$button-font-normalization}rem;
+  // font-size: #{$button-font-normalization}rem;
+  @extend .h6;
   font-weight: 600;
   line-height: #{to-fixed($button-font-normalization * 3)}rem;
   letter-spacing: .1rem;
