@@ -7,12 +7,10 @@ class CodeSnippet extends Component {
   render() {
     return (
       <div>
-        <Prism language={this.props.lang}>
-          {this.props.code}
-        </Prism>
+        <Prism language={this.props.lang}>{this.props.code}</Prism>
       </div>
     );
   }
-};
+}
 
 export default CodeSnippet;

@@ -27,6 +27,26 @@
     "build": "npm run build-css && react-scripts build",
     "postbuild": "mkdir build/bonsai-ui && mv build/static build/bonsai-ui/static/",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier-format-js": "prettier --config package.json --write './**/*.js'",
+    "prettier-check-js": "prettier --config package.json --list-different './**/*.js'",
+    "prettier-format-scss": "prettier --config package.json --write './**/*.scss'",
+    "prettier-check-scss": "prettier --config package.json --list-different './**/*.scss'",
+    "prettier-format": "npm run prettier-format-js && npm run prettier-format-scss",
+    "prettier-check": "npm run prettier-check-js && npm run prettier-check-scss"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true,
+    "arrowParens": "always"
+  },
+  "devDependencies": {
+    "prettier": "^1.9.2"
   }
 }

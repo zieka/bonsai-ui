@@ -1,46 +1,48 @@
-$primary:                                   hsl(111, 44%, 50%);
+$primary: hsl(111, 44%, 50%);
 
-$primary--dark:                             darken($primary, 14%);
-$primary--light:                            lighten($primary, 14%);
+$primary--dark: darken($primary, 14%);
+$primary--light: lighten($primary, 14%);
 
 // interesting angles of primary color
-$primary--rotate-30:        adjust-hue($primary, 30);
-$primary--rotate-45:        adjust-hue($primary, 45);
-$primary--rotate-60:        adjust-hue($primary, 60);
-$primary--rotate-90:        adjust-hue($primary, 90);
-$primary--rotate-120:       adjust-hue($primary, 120);
-$primary--rotate-135:       adjust-hue($primary, 135);
-$primary--rotate-150:       adjust-hue($primary, 150);
-$primary--rotate-180:       adjust-hue($primary, 180);
-$primary--rotate-210:       adjust-hue($primary, 210);
-$primary--rotate-225:       adjust-hue($primary, 225);
-$primary--rotate-240:       adjust-hue($primary, 240);
-$primary--rotate-270:       adjust-hue($primary, 270);
-$primary--rotate-300:       adjust-hue($primary, 300);
-$primary--rotate-315:       adjust-hue($primary, 315);
-$primary--rotate-330:       adjust-hue($primary, 330);
+$primary--rotate-30: adjust-hue($primary, 30);
+$primary--rotate-45: adjust-hue($primary, 45);
+$primary--rotate-60: adjust-hue($primary, 60);
+$primary--rotate-90: adjust-hue($primary, 90);
+$primary--rotate-120: adjust-hue($primary, 120);
+$primary--rotate-135: adjust-hue($primary, 135);
+$primary--rotate-150: adjust-hue($primary, 150);
+$primary--rotate-180: adjust-hue($primary, 180);
+$primary--rotate-210: adjust-hue($primary, 210);
+$primary--rotate-225: adjust-hue($primary, 225);
+$primary--rotate-240: adjust-hue($primary, 240);
+$primary--rotate-270: adjust-hue($primary, 270);
+$primary--rotate-300: adjust-hue($primary, 300);
+$primary--rotate-315: adjust-hue($primary, 315);
+$primary--rotate-330: adjust-hue($primary, 330);
 
 // alert colors
-$success:                                   darken($primary, 5%);
-$danger:                                    #b50000;
-$info:                                      #1873cd;
+$success: darken($primary, 5%);
+$danger: #b50000;
+$info: #1873cd;
 
 // typography
-$text-color:                                #111;
-$link-color:                                $primary--rotate-120;
-$visited-link-color:                        $primary--rotate-90;
+$text-color: #111;
+$link-color: $primary--rotate-120;
+$visited-link-color: $primary--rotate-90;
 
-$border-color:                              #999;
-$border-radius:                             4px;
-$standard-border-width:                     1px;
-$standard-border:                           $standard-border-width solid $border-color;
+$border-color: #999;
+$border-radius: 4px;
+$standard-border-width: 1px;
+$standard-border: $standard-border-width solid $border-color;
 
-$disabled-color:                            #888;
-$light-grey:                                #ddd;
+$disabled-color: #888;
+$light-grey: #ddd;
 
-$font-family:                               Raleway,helvetica,arial,sans-serif;
-$font-size:                                 16px;
+$font-family: Raleway, helvetica, arial, sans-serif;
+$font-size: 16px;
 
 // shadows
-$shadow-higher-level:                        0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12),0 3px 5px -1px rgba(0,0,0,.2);
-$shadow-lower-level:                       0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+$shadow-higher-level: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+  0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+$shadow-lower-level: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+  0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);

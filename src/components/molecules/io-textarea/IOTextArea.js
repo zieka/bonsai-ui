@@ -4,8 +4,11 @@ class IOTextArea extends Component {
   render() {
     return (
       <div className="io">
-        <label className="io__label" for={this.props.inputId}>{this.props.label}</label>
-        <textarea className="io__control"
+        <label className="io__label" for={this.props.inputId}>
+          {this.props.label}
+        </label>
+        <textarea
+          className="io__control"
           id={this.props.inputId}
           autofocus={this.props.autofocus}
           cols={this.props.cols}
@@ -19,11 +22,11 @@ class IOTextArea extends Component {
           required={this.props.required}
           rows={this.props.rows}
           wrap={this.props.wrap}>
-        {this.children}
+          {this.children}
         </textarea>
       </div>
     );
   }
-};
+}
 
 export default IOTextArea;

@@ -4,10 +4,9 @@
 $button-fill-color: $info;
 $button-danger-color: $danger;
 $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
-              0px 0.1rem 1.33rem rgba(0, 0, 0, 0.1),
-              0px 0.1rem .33rem rgba(0, 0, 0, 0.1);
+  0px 0.1rem 1.33rem rgba(0, 0, 0, 0.1), 0px 0.1rem 0.33rem rgba(0, 0, 0, 0.1);
 
-$button-font-normalization: .67;
+$button-font-normalization: 0.67;
 
 .btn {
   display: inline-block;
@@ -19,7 +18,7 @@ $button-font-normalization: .67;
   @extend .h6;
   font-weight: 600;
   line-height: #{to-fixed($button-font-normalization * 3)}rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   // text-decoration: none;
   white-space: nowrap;
@@ -29,7 +28,8 @@ $button-font-normalization: .67;
   cursor: pointer;
   box-sizing: border-box;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     outline: 0;
     @extend .shadow-h;
   }
@@ -46,9 +46,11 @@ $button-font-normalization: .67;
     cursor: not-allowed;
   }
 
-  &--fill, &--danger {
+  &--fill,
+  &--danger {
     color: #fff;
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
       text-shadow: $text-shadow;
     }
     &[disabled] {
@@ -61,8 +63,16 @@ $button-font-normalization: .67;
     border-color: darken($button-fill-color, 3%);
 
     &[disabled] {
-      background-color: hsl(hue($button-fill-color), saturation($button-fill-color), 88%);
-      border-color: hsl(hue($button-fill-color), saturation($button-fill-color), 85%);
+      background-color: hsl(
+        hue($button-fill-color),
+        saturation($button-fill-color),
+        88%
+      );
+      border-color: hsl(
+        hue($button-fill-color),
+        saturation($button-fill-color),
+        85%
+      );
     }
   }
 
@@ -71,8 +81,16 @@ $button-font-normalization: .67;
     border-color: darken($button-danger-color, 3%);
 
     &[disabled] {
-      background-color: hsl(hue($button-danger-color), saturation($button-danger-color), 88%);
-      border-color: hsl(hue($button-danger-color), saturation($button-danger-color), 85%);
+      background-color: hsl(
+        hue($button-danger-color),
+        saturation($button-danger-color),
+        88%
+      );
+      border-color: hsl(
+        hue($button-danger-color),
+        saturation($button-danger-color),
+        85%
+      );
     }
   }
 }

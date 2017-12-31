@@ -18,7 +18,7 @@ const codeExample = `
 
 `;
 
-const codeExample2 =`
+const codeExample2 = `
 <div class="row">
   <div class="col-6">col-6</div>
   <div class="col-6">col-6</div>
@@ -42,57 +42,72 @@ class GridExample extends Component {
     return (
       <div>
         <p>
-          The grid is a 12-column fluid grid similar to the one found in bootstrap.
+          The grid is a 12-column fluid grid similar to the one found in
+          bootstrap.
         </p>
         <p>
-          The base class <code style={{'white-space': 'nowrap'}}>col-<i>width
-        </i></code> should be used to layout your site at the smallest of
-          supported mobile resolutions.
+          The base class{' '}
+          <code style={{ 'white-space': 'nowrap' }}>
+            col-<i>width</i>
+          </code>{' '}
+          should be used to layout your site at the smallest of supported mobile
+          resolutions.
         </p>
         <div className="grid-example">
           <div className="row">
-            <div className="col-1">col-1</div><div className="col-11">col-11</div>
+            <div className="col-1">col-1</div>
+            <div className="col-11">col-11</div>
           </div>
           <div className="row">
-            <div className="col-2">col-2</div><div className="col-10">col-10</div>
+            <div className="col-2">col-2</div>
+            <div className="col-10">col-10</div>
           </div>
           <div className="row">
-            <div className="col-3">col-3</div><div className="col-9">col-9</div>
+            <div className="col-3">col-3</div>
+            <div className="col-9">col-9</div>
           </div>
           <div className="row">
-            <div className="col-4">col-4</div><div className="col-8">col-8</div>
+            <div className="col-4">col-4</div>
+            <div className="col-8">col-8</div>
           </div>
           <div className="row">
-            <div className="col-5">col-5</div><div className="col-7">col-7</div>
+            <div className="col-5">col-5</div>
+            <div className="col-7">col-7</div>
           </div>
           <div className="row">
-            <div className="col-6">col-6</div><div className="col-6">col-6</div>
+            <div className="col-6">col-6</div>
+            <div className="col-6">col-6</div>
           </div>
           <div className="row">
-            <div className="col-7">col-7</div><div className="col-5">col-5</div>
+            <div className="col-7">col-7</div>
+            <div className="col-5">col-5</div>
           </div>
           <div className="row">
-            <div className="col-8">col-8</div><div className="col-4">col-4</div>
+            <div className="col-8">col-8</div>
+            <div className="col-4">col-4</div>
           </div>
           <div className="row">
-            <div className="col-9">col-9</div><div className="col-3">col-3</div>
+            <div className="col-9">col-9</div>
+            <div className="col-3">col-3</div>
           </div>
           <div className="row">
-            <div className="col-10">col-10</div><div className="col-2">col-2</div>
+            <div className="col-10">col-10</div>
+            <div className="col-2">col-2</div>
           </div>
           <div className="row">
-            <div className="col-11">col-11</div><div className="col-1">col-1</div>
+            <div className="col-11">col-11</div>
+            <div className="col-1">col-1</div>
           </div>
         </div>
-        <CodeSnippet code={codeExample} lang="html"/>
+        <CodeSnippet code={codeExample} lang="html" />
         <p>
           If you want the layout to change as you design for larger resolutions
-          you can provide supplementary classes <code style={{'white-space': 'nowrap'}}>
-          <i>breakpoint</i>-<i>width</i></code>.
+          you can provide supplementary classes{' '}
+          <code style={{ 'white-space': 'nowrap' }}>
+            <i>breakpoint</i>-<i>width</i>
+          </code>.
         </p>
-        <p>
-          Resize the browser and have a look:
-        </p>
+        <p>Resize the browser and have a look:</p>
         <div className="grid-example">
           <div className="row">
             <div className="col-6">col-6</div>
@@ -110,7 +125,7 @@ class GridExample extends Component {
             <div className="col-12 lg-3">col-12 lg-3</div>
           </div>
         </div>
-        <CodeSnippet code={codeExample2} lang="html"/>
+        <CodeSnippet code={codeExample2} lang="html" />
       </div>
     );
   }

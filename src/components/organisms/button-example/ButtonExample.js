@@ -18,36 +18,42 @@ class ButtonExample extends Component {
   render() {
     return (
       <div>
+        <p>Buttons come in three flavors:</p>
         <p>
-          Buttons come in three flavors:
+          The standard class <code>btn</code> applies the shape and shadowing of
+          the button and can be used as a default button:
         </p>
-        <p>
-          The standard class <code>btn</code> applies the shape and shadowing
-          of the button and can be used as a default button:
-        </p>
-        <div style={{'margin':'1.66rem 0'}}>
+        <div style={{ margin: '1.66rem 0' }}>
           <button className="btn">Button</button>
-          <button className="btn" disabled>Button Disabled</button>
+          <button className="btn" disabled>
+            Button Disabled
+          </button>
         </div>
-        <CodeSnippet code={codeExample} lang="html"/>
+        <CodeSnippet code={codeExample} lang="html" />
         <p>
-          The modifier class <code>btn--fill</code> creates a <strong>colored</strong> button
-          which should be used to visually guide the user to the next step:
+          The modifier class <code>btn--fill</code> creates a{' '}
+          <strong>colored</strong> button which should be used to visually guide
+          the user to the next step:
         </p>
-        <div style={{'margin':'1.66rem 0'}}>
+        <div style={{ margin: '1.66rem 0' }}>
           <button className="btn btn--fill">Fill</button>
-          <button className="btn btn--fill" disabled>Fill Disabled</button>
+          <button className="btn btn--fill" disabled>
+            Fill Disabled
+          </button>
         </div>
-        <CodeSnippet code={codeExample2} lang="html"/>
-          <p>
-            The modifier class <code>btn--danger</code> creates a <strong>cautionary</strong> button
-            and should be used to alert the user to a potentially negative action:
-          </p>
-          <div style={{'margin':'1.66rem 0'}}>
-            <button className="btn btn--danger">Danger</button>
-            <button className="btn btn--danger" disabled>Danger Disabled</button>
-          </div>
-          <CodeSnippet code={codeExample3} lang="html"/>
+        <CodeSnippet code={codeExample2} lang="html" />
+        <p>
+          The modifier class <code>btn--danger</code> creates a{' '}
+          <strong>cautionary</strong> button and should be used to alert the
+          user to a potentially negative action:
+        </p>
+        <div style={{ margin: '1.66rem 0' }}>
+          <button className="btn btn--danger">Danger</button>
+          <button className="btn btn--danger" disabled>
+            Danger Disabled
+          </button>
+        </div>
+        <CodeSnippet code={codeExample3} lang="html" />
       </div>
     );
   }

@@ -46,33 +46,40 @@ const codeExample2 = `<div class="row">
 </div>
 `;
 
-const lorem = `Eiusmod est proident labore consequat reprehenderit fugiat consequat culpa do veniam minim. In magna velit Lorem nostrud id sint in labore anim esse. Quis duis exercitation consectetur ad id elit est fugiat. Veniam sint veniam et eu irure consectetur ea labore irure labore qui incididunt adipisicing nulla nulla incididunt. Lorem exercitation aliquip est ullamco quis aute veniam nostrud amet consectetur esse cillum ex. Et enim excepteur pariatur id sint commodo dolore excepteur occaecat reprehenderit ut.`
+const lorem = `Eiusmod est proident labore consequat reprehenderit fugiat consequat culpa do veniam minim. In magna velit Lorem nostrud id sint in labore anim esse. Quis duis exercitation consectetur ad id elit est fugiat. Veniam sint veniam et eu irure consectetur ea labore irure labore qui incididunt adipisicing nulla nulla incididunt. Lorem exercitation aliquip est ullamco quis aute veniam nostrud amet consectetur esse cillum ex. Et enim excepteur pariatur id sint commodo dolore excepteur occaecat reprehenderit ut.`;
 
 class InputExample extends Component {
   render() {
     return (
       <div>
         <p>
-          Bonsai uses the base class <code>io</code> to wrap an input control and it's label.
+          Bonsai uses the base class <code>io</code> to wrap an input control
+          and it's label.
         </p>
         <p>
-          The class <code>io__label</code> can grant form styling to the label element,
-          while the class <code>io__control</code> can be applied to the actual input
-          control element:
+          The class <code>io__label</code> can grant form styling to the label
+          element, while the class <code>io__control</code> can be applied to
+          the actual input control element:
         </p>
         <form>
           <div className="row">
             <div className="col-12 col-sm-6">
-              <IOInput  inputId="emailAddress"
-                        placeholder="name@mail.com"
-                        type="email"
-                        label="Your email"/>
+              <IOInput
+                inputId="emailAddress"
+                placeholder="name@mail.com"
+                type="email"
+                label="Your email"
+              />
             </div>
             <div className="col-12 col-sm-6">
               <div className="io">
-                <label className="io__label" for="reason">Reason for Contacting</label>
+                <label className="io__label" for="reason">
+                  Reason for Contacting
+                </label>
                 <select className="io__control" id="reason" required>
-                  <option value="" hidden>Select a Reason</option>
+                  <option value="" hidden>
+                    Select a Reason
+                  </option>
                   <option value="Option 1">General Question</option>
                   <option value="Option 2">Report Issue</option>
                   <option value="Option 3">Feedback</option>
@@ -80,29 +87,36 @@ class InputExample extends Component {
               </div>
             </div>
           </div>
-          <IOTextArea className="io__control" placeholder={lorem} inputId="message" label="message"></IOTextArea>
+          <IOTextArea
+            className="io__control"
+            placeholder={lorem}
+            inputId="message"
+            label="message"
+          />
         </form>
-        <CodeSnippet code={codeExample} lang="html"/>
-        <p>
-          There are also styles for disabled or readonly attributes:
-        </p>
+        <CodeSnippet code={codeExample} lang="html" />
+        <p>There are also styles for disabled or readonly attributes:</p>
         <div className="row">
           <div className="col-12 col-sm-6">
-            <IOInput  inputId="readOnlyExample"
-                      type="text"
-                      label="Read Only Example"
-                      value="This text is the read only style"
-                      readonly="true"/>
+            <IOInput
+              inputId="readOnlyExample"
+              type="text"
+              label="Read Only Example"
+              value="This text is the read only style"
+              readonly="true"
+            />
           </div>
           <div className="col-12 col-sm-6">
-            <IOInput  inputId="disabledExample"
-                      type="text"
-                      label="Disabled Example"
-                      value="This text is the disabled style"
-                      disabled="true"/>
+            <IOInput
+              inputId="disabledExample"
+              type="text"
+              label="Disabled Example"
+              value="This text is the disabled style"
+              disabled="true"
+            />
           </div>
         </div>
-        <CodeSnippet code={codeExample2} lang="html"/>
+        <CodeSnippet code={codeExample2} lang="html" />
       </div>
     );
   }

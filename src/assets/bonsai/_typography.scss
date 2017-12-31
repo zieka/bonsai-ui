@@ -4,20 +4,21 @@ body {
   font-family: $font-family;
 }
 
-
 $headers: 6;
 
 %header-global-styles {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: 100;
 }
 
 @mixin header {
   @for $i from 1 through $headers {
-      .h#{$i} { @extend %header-global-styles; }
-      .h#{$i} {
-        font-size: #{to-fixed(2.66667 - (1 * ($i/3)))}rem;
-      }
+    .h#{$i} {
+      @extend %header-global-styles;
+    }
+    .h#{$i} {
+      font-size: #{to-fixed(2.66667 - (1 * ($i/3)))}rem;
+    }
   }
 }
 
