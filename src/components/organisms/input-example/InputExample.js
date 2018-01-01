@@ -5,13 +5,13 @@ import IOTextArea from '../../molecules/io-textarea/IOTextArea';
 
 const codeExample = `<form>
   <div class="row">
-    <div class="col-12 col-sm-6">
+    <div class="col-12 sm-6">
       <div class="io">
         <label class="io__label" for="emailAddress" required>Your email</label>
         <input class="io__control" type="email" placeholder="name@mail.com" id="emailAddress" />
       </div>
     </div>
-    <div class="col-12 col-sm-6">
+    <div class="col-12 sm-6">
       <div class="io">
         <label class="io__label" for="reason">Reason for Contacting</label>
         <select class="io__control" id="reason" required>
@@ -31,13 +31,13 @@ const codeExample = `<form>
 `;
 
 const codeExample2 = `<div class="row">
-  <div class="col-12 col-sm-6">
+  <div class="col-12 sm-6">
     <div class="io">
       <label class="io__label" for="readOnlyExample" required>Read Only Example</label>
       <input class="io__control" type="text" value="This text is the read only style" id="readOnlyExample" readonly="true"/>
     </div>
   </div>
-  <div class="col-12 col-sm-6">
+  <div class="col-12 sm-6">
     <div class="io">
       <label class="io__label" for="disabledExample" required>Disabled Example</label>
       <input class="io__control" type="text" value="This text is the disabled style" id="disabledExample" disabled/>
@@ -63,7 +63,7 @@ class InputExample extends Component {
         </p>
         <form>
           <div className="row">
-            <div className="col-12 col-sm-6">
+            <div className="col-12 sm-6">
               <IOInput
                 inputId="emailAddress"
                 placeholder="name@mail.com"
@@ -71,7 +71,7 @@ class InputExample extends Component {
                 label="Your email"
               />
             </div>
-            <div className="col-12 col-sm-6">
+            <div className="col-12 sm-6">
               <div className="io">
                 <label className="io__label" for="reason">
                   Reason for Contacting
@@ -97,7 +97,7 @@ class InputExample extends Component {
         <CodeSnippet code={codeExample} lang="html" />
         <p>There are also styles for disabled or readonly attributes:</p>
         <div className="row">
-          <div className="col-12 col-sm-6">
+          <div className="col-12 sm-6">
             <IOInput
               inputId="readOnlyExample"
               type="text"
@@ -106,7 +106,7 @@ class InputExample extends Component {
               readonly="true"
             />
           </div>
-          <div className="col-12 col-sm-6">
+          <div className="col-12 sm-6">
             <IOInput
               inputId="disabledExample"
               type="text"
