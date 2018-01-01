@@ -22,7 +22,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Banner logo="./logo.svg" />
+        <Banner logo="./logo.svg" bannerBg="./hb.jpg" />
         <Topic title="Why Bonsai?">
           <p>
             Large css libraries, frameworks, and toolkits tend to offer a lot of
