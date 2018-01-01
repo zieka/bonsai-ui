@@ -25,14 +25,14 @@ class Home extends Component {
         <Banner logo="./logo.svg" />
         <Topic title="Why Bonsai?">
           <p>
-            Large component libraries and UI frameworks tend to offer a lot of
+            Large css libraries, frameworks, and toolkits tend to offer a lot of
             tools to aid in rapid prototyping and then expect developers to cut
             out the excess. Bonsai's approach is to start on the opposite end of
             the spectrum.
           </p>
           <p>
             Bonsai UI focuses on keeping things <strong>simple</strong> by
-            starting <strong>small</strong>.
+            starting <strong>small</strong> and staying <strong>small</strong>.
           </p>
           <p>
             If building sites with simple, clean, and lightweight interfaces is
@@ -93,7 +93,7 @@ class Home extends Component {
           <div style={{ 'text-align': 'center' }}>
             <img
               class="shadow-l"
-              src="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg"
+              src="./hb.jpg"
               alt="Bonsai with low shadow"
               width="250"
             />
@@ -105,7 +105,7 @@ class Home extends Component {
           <div style={{ 'text-align': 'center' }}>
             <img
               class="shadow-h"
-              src="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg"
+              src="./hb.jpg"
               alt="Bonsai with high shadow"
               width="250"
             />
@@ -131,7 +131,7 @@ class Home extends Component {
             <div className="col-12 sm-4" style={spacingStyle}>
               <Card
                 height="150px"
-                imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
+                imgSrc="./hb.jpg">
                 <p>
                   This card has no title text but has a title background image.
                 </p>
@@ -141,7 +141,7 @@ class Home extends Component {
               <Card
                 title="Bonsai"
                 height="150px"
-                imgSrc="https://i.ytimg.com/vi/dDVM5l6yX14/hqdefault.jpg">
+                imgSrc="./hb.jpg">
                 <p>This card has a title text and a title background image.</p>
               </Card>
             </div>

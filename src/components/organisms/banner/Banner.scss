@@ -1,22 +1,28 @@
+$title-offset: 175px;
+
 .banner {
   text-align: center;
 }
 
 .banner__logo {
-  height: 10em;
+  height: 2em;
   background-color: #d5f5f7;
   border-radius: 50%;
-  padding: 10px;
+  padding: 1px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 .banner__header {
-  background-color: #222;
-  height: calc(50vh + 100px);
+  background: url("./hb.jpg") center center / cover;
+  height: calc(50vh + #{$title-offset});
   padding: 20px;
   color: white;
-  padding-top: calc(50vh - 100px);
+  padding-top: calc(50vh - #{$title-offset});
 }
 
 .banner__title {
   font-size: 1.33rem;
+  display: inline-block;
+  vertical-align: middle;
 }
