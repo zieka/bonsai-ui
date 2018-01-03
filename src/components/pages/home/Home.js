@@ -10,12 +10,12 @@ import Card from '../../molecules/card/Card';
 const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`;
 
 const spacingStyle = {
-  'boxSizing': 'border-box',
-  'border': '1px solid #fff',
-  'marginBottom': '.66rem',
-  'fontSize': '.75rem',
-  'marginLeft': 'auto',
-  'marginRight': 'auto'
+  boxSizing: 'border-box',
+  border: '1px solid #fff',
+  marginBottom: '.66rem',
+  fontSize: '.75rem',
+  marginLeft: 'auto',
+  marginRight: 'auto'
 };
 
 class Home extends Component {
@@ -38,7 +38,7 @@ class Home extends Component {
             If building sites with simple, clean, and lightweight interfaces is
             your goal, Bonsai may be for you.
           </p>
-          <div className="row" style={{ 'marginTop': '2rem' }}>
+          <div className="row" style={{ marginTop: '2rem' }}>
             <img
               className="col-3"
               src="./jquery-free.svg"
@@ -75,7 +75,7 @@ class Home extends Component {
             <code>&lt;html&gt;</code> font-size property.
           </p>
           <p>Font sizing uses the following h# classes:</p>
-          <div style={{ 'marginBottom': '3rem' }}>
+          <div style={{ marginBottom: '3rem' }}>
             <h1 className="h1">&lt;h1 class="h1"&gt;</h1>
             <h2 className="h2">&lt;h2 class="h2"&gt;</h2>
             <h3 className="h3">&lt;h3 class="h3"&gt;</h3>
@@ -90,7 +90,7 @@ class Home extends Component {
             to elements. The .shadow-l class adds a low level shadow meaning it
             will appear close to the origin plane:
           </p>
-          <div style={{ 'textAlign': 'center' }}>
+          <div style={{ textAlign: 'center' }}>
             <img
               className="shadow-l"
               src="./hb_250.jpg"
@@ -102,7 +102,7 @@ class Home extends Component {
             The .shadow-h class adds a high level shadow meaning it will appear
             further away from the origin plane than the lower shadow level:
           </p>
-          <div style={{ 'textAlign': 'center' }}>
+          <div style={{ textAlign: 'center' }}>
             <img
               className="shadow-h"
               src="./hb_250.jpg"
@@ -129,19 +129,14 @@ class Home extends Component {
               </Card>
             </div>
             <div className="col-12 sm-4" style={spacingStyle}>
-              <Card
-                height="150px"
-                imgSrc="./hb_250.jpg">
+              <Card height="150px" imgSrc="./hb_250.jpg">
                 <p>
                   This card has no title text but has a title background image.
                 </p>
               </Card>
             </div>
             <div className="col-12 sm-4" style={spacingStyle}>
-              <Card
-                title="Bonsai"
-                height="150px"
-                imgSrc="./hb_250.jpg">
+              <Card title="Bonsai" height="150px" imgSrc="./hb_250.jpg">
                 <p>This card has a title text and a title background image.</p>
               </Card>
             </div>

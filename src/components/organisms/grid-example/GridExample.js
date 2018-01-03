@@ -47,7 +47,7 @@ class GridExample extends Component {
         </p>
         <p>
           The base class{' '}
-          <code style={{ 'whiteSpace': 'nowrap' }}>
+          <code style={{ whiteSpace: 'nowrap' }}>
             col-<i>width</i>
           </code>{' '}
           should be used to layout your site at the smallest of supported mobile
@@ -103,7 +103,7 @@ class GridExample extends Component {
         <p>
           If you want the layout to change as you design for larger resolutions
           you can provide supplementary classes{' '}
-          <code style={{ 'whiteSpace': 'nowrap' }}>
+          <code style={{ whiteSpace: 'nowrap' }}>
             <i>breakpoint</i>-<i>width</i>
           </code>.
         </p>
