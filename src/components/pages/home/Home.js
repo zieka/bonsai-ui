@@ -10,12 +10,12 @@ import Card from '../../molecules/card/Card';
 const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`;
 
 const spacingStyle = {
-  'box-sizing': 'border-box',
-  border: '1px solid #fff',
-  'margin-bottom': '.66rem',
-  'font-size': '.75rem',
-  'margin-left': 'auto',
-  'margin-right': 'auto'
+  'boxSizing': 'border-box',
+  'border': '1px solid #fff',
+  'marginBottom': '.66rem',
+  'fontSize': '.75rem',
+  'marginLeft': 'auto',
+  'marginRight': 'auto'
 };
 
 class Home extends Component {
@@ -38,7 +38,7 @@ class Home extends Component {
             If building sites with simple, clean, and lightweight interfaces is
             your goal, Bonsai may be for you.
           </p>
-          <div className="row" style={{ 'margin-top': '2rem' }}>
+          <div className="row" style={{ 'marginTop': '2rem' }}>
             <img
               className="col-3"
               src="./jquery-free.svg"
@@ -75,13 +75,13 @@ class Home extends Component {
             <code>&lt;html&gt;</code> font-size property.
           </p>
           <p>Font sizing uses the following h# classes:</p>
-          <div style={{ 'margin-bottom': '3rem' }}>
-            <h1 class="h1">&lt;h1 class="h1"&gt;</h1>
-            <h2 class="h2">&lt;h2 class="h2"&gt;</h2>
-            <h3 class="h3">&lt;h3 class="h3"&gt;</h3>
-            <h4 class="h4">&lt;h4 class="h4"&gt;</h4>
-            <h5 class="h5">&lt;h5 class="h5"&gt;</h5>
-            <h6 class="h6">&lt;h6 class="h6"&gt;</h6>
+          <div style={{ 'marginBottom': '3rem' }}>
+            <h1 className="h1">&lt;h1 class="h1"&gt;</h1>
+            <h2 className="h2">&lt;h2 class="h2"&gt;</h2>
+            <h3 className="h3">&lt;h3 class="h3"&gt;</h3>
+            <h4 className="h4">&lt;h4 class="h4"&gt;</h4>
+            <h5 className="h5">&lt;h5 class="h5"&gt;</h5>
+            <h6 className="h6">&lt;h6 class="h6"&gt;</h6>
           </div>
           <p>The recommended font is Raleway served by Google:</p>
           <CodeSnippet code={fontCss} lang="html" />
@@ -90,9 +90,9 @@ class Home extends Component {
             to elements. The .shadow-l class adds a low level shadow meaning it
             will appear close to the origin plane:
           </p>
-          <div style={{ 'text-align': 'center' }}>
+          <div style={{ 'textAlign': 'center' }}>
             <img
-              class="shadow-l"
+              className="shadow-l"
               src="./hb.jpg"
               alt="Bonsai with low shadow"
               width="250"
@@ -102,9 +102,9 @@ class Home extends Component {
             The .shadow-h class adds a high level shadow meaning it will appear
             further away from the origin plane than the lower shadow level:
           </p>
-          <div style={{ 'text-align': 'center' }}>
+          <div style={{ 'textAlign': 'center' }}>
             <img
-              class="shadow-h"
+              className="shadow-h"
               src="./hb.jpg"
               alt="Bonsai with high shadow"
               width="250"

@@ -4,7 +4,7 @@ class IOInput extends Component {
   render() {
     return (
       <div className="io">
-        <label className="io__label" for={this.props.inputId}>
+        <label className="io__label" htmlFor={this.props.inputId}>
           {this.props.label}
         </label>
         <input
@@ -13,7 +13,7 @@ class IOInput extends Component {
           placeholder={this.props.placeholder}
           id={this.props.inputId}
           value={this.props.value}
-          readonly={this.props.readonly}
+          readOnly={this.props.readonly}
           disabled={this.props.disabled}
         />
       </div>

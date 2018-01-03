@@ -73,7 +73,7 @@ class InputExample extends Component {
             </div>
             <div className="col-12 sm-6">
               <div className="io">
-                <label className="io__label" for="reason">
+                <label className="io__label" htmlFor="reason">
                   Reason for Contacting
                 </label>
                 <select className="io__control" id="reason" required>
