@@ -22,7 +22,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Banner logo="./logo.svg" bannerBg="./hb.jpg" />
+        <Banner logo="./logo.svg" bannerBg="./hb_1920.jpg" />
         <Topic title="Why Bonsai?">
           <p>
             Large css libraries, frameworks, and toolkits tend to offer a lot of
@@ -93,7 +93,7 @@ class Home extends Component {
           <div style={{ 'textAlign': 'center' }}>
             <img
               className="shadow-l"
-              src="./hb.jpg"
+              src="./hb_250.jpg"
               alt="Bonsai with low shadow"
               width="250"
             />
@@ -105,7 +105,7 @@ class Home extends Component {
           <div style={{ 'textAlign': 'center' }}>
             <img
               className="shadow-h"
-              src="./hb.jpg"
+              src="./hb_250.jpg"
               alt="Bonsai with high shadow"
               width="250"
             />
@@ -131,7 +131,7 @@ class Home extends Component {
             <div className="col-12 sm-4" style={spacingStyle}>
               <Card
                 height="150px"
-                imgSrc="./hb.jpg">
+                imgSrc="./hb_250.jpg">
                 <p>
                   This card has no title text but has a title background image.
                 </p>
@@ -141,7 +141,7 @@ class Home extends Component {
               <Card
                 title="Bonsai"
                 height="150px"
-                imgSrc="./hb.jpg">
+                imgSrc="./hb_250.jpg">
                 <p>This card has a title text and a title background image.</p>
               </Card>
             </div>
