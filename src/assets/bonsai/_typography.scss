@@ -51,3 +51,16 @@ body {
 .shadow-l {
   box-shadow: $shadow-lower-level;
 }
+
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}
+.tj {
+  text-align: justify;
+}

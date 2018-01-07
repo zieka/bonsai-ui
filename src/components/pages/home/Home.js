@@ -74,12 +74,13 @@ class Home extends Component {
           </p>
           <p>Font sizing uses the following f# classes:</p>
           <div style={{ marginBottom: '3rem' }}>
-            <h1 className="f1">&lt;h1 class="f1"&gt;</h1>
-            <h2 className="f2">&lt;h2 class="f2"&gt;</h2>
-            <h3 className="f3">&lt;h3 class="f3"&gt;</h3>
-            <h4 className="f4">&lt;h4 class="f4"&gt;</h4>
-            <h5 className="f5">&lt;h5 class="f5"&gt;</h5>
-            <h6 className="f6">&lt;h6 class="f6"&gt;</h6>
+            <div className="f1">&lt;div class="f1"&gt;</div>
+            <div className="f2">&lt;div class="f2"&gt;</div>
+            <div className="f3">&lt;div class="f3"&gt;</div>
+            <div className="f4">&lt;div class="f4"&gt;</div>
+            <div className="f5">&lt;div class="f5"&gt;</div>
+            <div className="f6">&lt;div class="f6"&gt;</div>
+            <div className="f7">&lt;div class="f7"&gt;</div>
           </div>
 
           <p>
@@ -139,14 +140,80 @@ class Home extends Component {
             </div>
           </div>
         </Topic>
-        <Topic title="Loading">
-          <div className="loader">Loading...</div>
+        <Topic title="Busy Indicator">
           <p>
-            Voluptate culpa ullamco proident nulla elit aute sit laboris mollit
-            in. Occaecat consequat dolor excepteur velit exercitation deserunt
-            eu id est enim cillum pariatur culpa esse excepteur laborum non.
-            Elit officia consequat ad aliqua velit adipisicing officia nulla.
+            A busy indicator can be used while waiting for an asynchronous task
+            to complete and is as simple as adding a div with the class 'busy':
           </p>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy" />
+            </div>
+            <div className="col-6">
+              <div>&lt;div class="busy"&gt;</div>
+            </div>
+          </div>
+          <p>
+            The busy indicator scales on font size so you can define a custom
+            font size or add a font-sizing class (f#) to get the perfect size of
+            indicator:
+          </p>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f1" />
+            </div>
+            <div className="col-6">
+              <div className="f1">F1</div>
+            </div>
+          </div>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f2" />
+            </div>
+            <div className="col-6">
+              <div className="f2">F2</div>
+            </div>
+          </div>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f3" />
+            </div>
+            <div className="col-6">
+              <div className="f3">F3</div>
+            </div>
+          </div>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f4" />
+            </div>
+            <div className="col-6">
+              <div className="f4">F4</div>
+            </div>
+          </div>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f5" />
+            </div>
+            <div className="col-6">
+              <div className="f5">F5</div>
+            </div>
+          </div>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f6" />
+            </div>
+            <div className="col-6">
+              <div className="f6">F6</div>
+            </div>
+          </div>
+          <div className="row tc">
+            <div className="col-6">
+              <div className="busy f7" />
+            </div>
+            <div className="col-6">
+              <div className="f7">F7</div>
+            </div>
+          </div>
         </Topic>
         <Topic title="Toggles">
           <p>
