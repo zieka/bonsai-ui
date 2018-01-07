@@ -4,7 +4,7 @@ import Topic from '../../organisms/topic/Topic';
 import GridExample from '../../organisms/grid-example/GridExample';
 import ButtonExample from '../../organisms/button-example/ButtonExample';
 import InputExample from '../../organisms/input-example/InputExample';
-import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
+// import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import Card from '../../molecules/card/Card';
 
 const spacingStyle = {

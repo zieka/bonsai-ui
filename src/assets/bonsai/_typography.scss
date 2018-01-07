@@ -24,25 +24,25 @@ body {
 /* Type Scale */
 
 .f1 {
-  font-size: 3rem;
+  font-size: $f1-font-size;
 }
 .f2 {
-  font-size: 2.25rem;
+  font-size: $f2-font-size;
 }
 .f3 {
-  font-size: 1.5rem;
+  font-size: $f3-font-size;
 }
 .f4 {
-  font-size: 1.25rem;
+  font-size: $f4-font-size;
 }
 .f5 {
-  font-size: 1rem;
+  font-size: $f5-font-size;
 }
 .f6 {
-  font-size: 0.875rem;
+  font-size: $f6-font-size;
 }
 .f7 {
-  font-size: 0.75rem;
+  font-size: $f7-font-size;
 } /* Small and hard to read for many people so use with extreme caution */
 
 .shadow-h {

@@ -1,7 +1,9 @@
+@import 'src/assets/bonsai/_variables.scss';
+
 a.btn,
 button,
 input[type='submit'],
 input[type='button'],
 input[type='reset'] {
-  margin-right: 0.666rem;
+  margin-right: $f7-font-size;
 }
