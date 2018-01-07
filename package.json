@@ -18,7 +18,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "npm run prettier-check && gh-pages -d build",
-    "build-css": "node-sass src -o src  && npm run build-bonsai",
+    "build-css": "node-sass src -o src && npm run build-bonsai",
     "build-bonsai": "node-sass src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
     "watch-bonsai": "node-sass -w src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
     "watch-css": "npm run build-css && npm run watch-bonsai && node-sass src -o src --watch",

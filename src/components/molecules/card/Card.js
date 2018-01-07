@@ -14,7 +14,7 @@ class Card extends Component {
             height: this.props.height,
             background: imgSrc(this.props.imgSrc)
           }}>
-          <div className="card__title-text h3">{this.props.title}</div>
+          <div className="card__title-text f2">{this.props.title}</div>
         </div>
         <div className="card__content">{this.props.children}</div>
       </div>

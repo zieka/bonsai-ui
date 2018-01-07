@@ -1,28 +1,49 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: $font-family;
 }
 
-$headers: 6;
-
-%header-global-styles {
+%font-spacing-style {
   letter-spacing: 0.1rem;
   font-weight: 100;
 }
 
-@mixin header {
-  @for $i from 1 through $headers {
-    .h#{$i} {
-      @extend %header-global-styles;
-    }
-    .h#{$i} {
-      font-size: #{to-fixed(2.66667 - (1 * ($i/3)))}rem;
-    }
+@for $i from 1 through 7 {
+  .f#{$i} {
+    @extend %font-spacing-style;
   }
 }
 
-@include header;
+/* Type Scale */
+
+.f1 {
+  font-size: 3rem;
+}
+.f2 {
+  font-size: 2.25rem;
+}
+.f3 {
+  font-size: 1.5rem;
+}
+.f4 {
+  font-size: 1.25rem;
+}
+.f5 {
+  font-size: 1rem;
+}
+.f6 {
+  font-size: 0.875rem;
+}
+.f7 {
+  font-size: 0.75rem;
+} /* Small and hard to read for many people so use with extreme caution */
 
 .shadow-h {
   box-shadow: $shadow-higher-level;

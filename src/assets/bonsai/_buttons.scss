@@ -9,15 +9,15 @@ $text-shadow: 0px -0.05rem 0.33rem rgba(0, 0, 0, 0.4),
 $button-font-normalization: 0.66;
 
 .btn {
+  @extend .f7;
   display: inline-block;
   height: 2rem;
   padding: 0 #{$button-font-normalization}rem;
   color: #555;
   text-align: center;
   // font-size: #{$button-font-normalization}rem;
-  @extend .h6;
   font-weight: 600;
-  line-height: #{to-fixed($button-font-normalization * 3)}rem;
+  // line-height: #{to-fixed($button-font-normalization * 3)}rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   // text-decoration: none;
@@ -30,8 +30,8 @@ $button-font-normalization: 0.66;
 
   &:hover,
   &:focus {
-    outline: 0;
     @extend .shadow-h;
+    outline: 0;
   }
 
   &:active {

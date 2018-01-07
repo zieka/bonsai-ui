@@ -16,7 +16,7 @@ class Banner extends Component {
           style={{
             background: imgSrc(this.props.bannerBg)
           }}>
-          <h1 className="banner__title">Welcome to Bonsai UI</h1>
+          <h1 className="banner__title f2">Welcome to Bonsai&nbsp;UI</h1>
           <img
             src={this.props.logo || logo}
             className="banner__logo"

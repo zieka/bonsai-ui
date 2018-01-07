@@ -7,8 +7,6 @@ import InputExample from '../../organisms/input-example/InputExample';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import Card from '../../molecules/card/Card';
 
-const fontCss = `<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`;
-
 const spacingStyle = {
   boxSizing: 'border-box',
   border: '1px solid #fff',
@@ -74,17 +72,16 @@ class Home extends Component {
             relationships can be responsively sized based on a single{' '}
             <code>&lt;html&gt;</code> font-size property.
           </p>
-          <p>Font sizing uses the following h# classes:</p>
+          <p>Font sizing uses the following f# classes:</p>
           <div style={{ marginBottom: '3rem' }}>
-            <h1 className="h1">&lt;h1 class="h1"&gt;</h1>
-            <h2 className="h2">&lt;h2 class="h2"&gt;</h2>
-            <h3 className="h3">&lt;h3 class="h3"&gt;</h3>
-            <h4 className="h4">&lt;h4 class="h4"&gt;</h4>
-            <h5 className="h5">&lt;h5 class="h5"&gt;</h5>
-            <h6 className="h6">&lt;h6 class="h6"&gt;</h6>
+            <h1 className="f1">&lt;h1 class="f1"&gt;</h1>
+            <h2 className="f2">&lt;h2 class="f2"&gt;</h2>
+            <h3 className="f3">&lt;h3 class="f3"&gt;</h3>
+            <h4 className="f4">&lt;h4 class="f4"&gt;</h4>
+            <h5 className="f5">&lt;h5 class="f5"&gt;</h5>
+            <h6 className="f6">&lt;h6 class="f6"&gt;</h6>
           </div>
-          <p>The recommended font is Raleway served by Google:</p>
-          <CodeSnippet code={fontCss} lang="html" />
+
           <p>
             The .shadow-l and .shadow-h classes can be used to add box shadows
             to elements. The .shadow-l class adds a low level shadow meaning it
@@ -143,16 +140,7 @@ class Home extends Component {
           </div>
         </Topic>
         <Topic title="Loading">
-          <p>
-            Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse
-            enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis
-            amet minim in. Exercitation nostrud occaecat consectetur sit est
-            adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua
-            dolor exercitation nisi amet adipisicing ea reprehenderit culpa
-            aliqua minim ut. Et aliquip veniam pariatur veniam excepteur
-            deserunt duis voluptate. Esse magna laboris ullamco quis incididunt
-            deserunt laboris qui nulla.
-          </p>
+          <div className="loader">Loading...</div>
           <p>
             Voluptate culpa ullamco proident nulla elit aute sit laboris mollit
             in. Occaecat consequat dolor excepteur velit exercitation deserunt
