@@ -68,12 +68,13 @@ class Home extends Component {
         </Topic>
         <Topic title="Typography">
           <p>
+            <h3 className="f3">Font Sizes</h3>
             Type is all set with the rems, so font-sizes and spacial
             relationships can be responsively sized based on a single{' '}
             <code>&lt;html&gt;</code> font-size property.
           </p>
           <p>Font sizing uses the following f# classes:</p>
-          <div style={{ marginBottom: '3rem' }}>
+          <div className="tc" style={{ marginBottom: '3rem' }}>
             <div className="f1">&lt;div class="f1"&gt;</div>
             <div className="f2">&lt;div class="f2"&gt;</div>
             <div className="f3">&lt;div class="f3"&gt;</div>
@@ -82,7 +83,7 @@ class Home extends Component {
             <div className="f6">&lt;div class="f6"&gt;</div>
             <div className="f7">&lt;div class="f7"&gt;</div>
           </div>
-
+          <h3 className="f3">Shadows</h3>
           <p>
             The .shadow-l and .shadow-h classes can be used to add box shadows
             to elements. The .shadow-l class adds a low level shadow meaning it
@@ -107,6 +108,25 @@ class Home extends Component {
               alt="Bonsai with high shadow"
               width="250"
             />
+          </div>
+          <h3 className="f3">Alignment</h3>
+          <p>Text Alignment can be done using the following classes:</p>
+          <div style={{ marginBottom: '3rem' }}>
+            <p className="tl f5">
+              Use <strong>class="tl"</strong> for left aligned text
+            </p>
+            <p className="tc f5">
+              Use <strong>class="tc"</strong> for center aligned text
+            </p>
+            <p className="tr f5">
+              Use <strong>class="tr"</strong> for right aligned text
+            </p>
+            <p className="tj f5">
+              Use <strong>class="tj"</strong> for justified text which is when
+              the text is aligned along the left margin, and letter- and
+              word-spacing is adjusted so that the text falls flush with both
+              margins, also known as fully justified or full justification;
+            </p>
           </div>
         </Topic>
         <Topic title="Buttons">
