@@ -25,24 +25,31 @@ body {
 
 .f1 {
   font-size: $f1-font-size;
+  line-height: $f1-font-size + 0.5rem;
 }
 .f2 {
   font-size: $f2-font-size;
+  line-height: $f2-font-size + 0.5rem;
 }
 .f3 {
   font-size: $f3-font-size;
+  line-height: $f3-font-size + 0.5rem;
 }
 .f4 {
   font-size: $f4-font-size;
+  line-height: $f4-font-size + 0.5rem;
 }
 .f5 {
   font-size: $f5-font-size;
+  line-height: $f5-font-size + 0.5rem;
 }
 .f6 {
   font-size: $f6-font-size;
+  line-height: $f6-font-size + 0.5rem;
 }
 .f7 {
   font-size: $f7-font-size;
+  line-height: $f7-font-size + 0.5rem;
 } /* Small and hard to read for many people so use with extreme caution */
 
 .shadow-h,

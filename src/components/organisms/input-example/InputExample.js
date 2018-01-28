@@ -46,7 +46,7 @@ const codeExample2 = `<div class="row">
 </div>
 `;
 
-const lorem = `Eiusmod est proident labore consequat reprehenderit fugiat consequat culpa do veniam minim. In magna velit Lorem nostrud id sint in labore anim esse. Quis duis exercitation consectetur ad id elit est fugiat. Veniam sint veniam et eu irure consectetur ea labore irure labore qui incididunt adipisicing nulla nulla incididunt. Lorem exercitation aliquip est ullamco quis aute veniam nostrud amet consectetur esse cillum ex. Et enim excepteur pariatur id sint commodo dolore excepteur occaecat reprehenderit ut.`;
+const lorem = `Enter extra details here`;
 
 class InputExample extends Component {
   render() {
@@ -69,6 +69,7 @@ class InputExample extends Component {
                 placeholder="name@mail.com"
                 type="email"
                 label="Your email"
+                size="6"
               />
             </div>
             <div className="col-12 sm-6">
@@ -77,7 +78,7 @@ class InputExample extends Component {
                   Reason for Contacting
                 </label>
                 <select
-                  className="io__control shadow--pop"
+                  className="io__control f6 shadow--pop"
                   id="reason"
                   required>
                   <option value="" hidden>
@@ -90,7 +91,12 @@ class InputExample extends Component {
               </div>
             </div>
           </div>
-          <IOTextArea placeholder={lorem} inputId="message" label="message" />
+          <IOTextArea
+            placeholder={lorem}
+            inputId="message"
+            label="message"
+            size="6"
+          />
         </form>
         <CodeSnippet code={codeExample} lang="html" />
         <p>There are also styles for disabled or readonly attributes:</p>

@@ -38,8 +38,9 @@ $standard-border: $standard-border-width solid $border-color;
 $disabled-color: #888;
 $light-grey: #ddd;
 
-$font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-  helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', SimSun, sans-serif;
 $font-size: 16px;
 
 $f1-font-size: 3rem;
@@ -49,6 +50,8 @@ $f4-font-size: 1.25rem;
 $f5-font-size: 1rem;
 $f6-font-size: 0.875rem;
 $f7-font-size: 0.75rem;
+
+$std-padding: 0.25em 0.75em;
 
 // shadows
 $shadow-higher-level: 0 6px 10px 0 rgba(0, 0, 0, 0.14),

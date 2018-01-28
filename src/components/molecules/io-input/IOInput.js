@@ -8,7 +8,7 @@ class IOInput extends Component {
           {this.props.label}
         </label>
         <input
-          className="io__control shadow--pop"
+          className={`io__control f${this.props.size} shadow--pop`}
           type={this.props.type}
           placeholder={this.props.placeholder}
           id={this.props.inputId}
