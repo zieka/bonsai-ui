@@ -3,6 +3,7 @@ import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import IOInput from '../../molecules/io-input/IOInput';
 import IOTextArea from '../../molecules/io-textarea/IOTextArea';
 
+const lorem = `Enter any comments, questions, and/or concerns here`;
 const codeExample = `<form>
   <div class="row">
     <div class="col-12 sm-6">
@@ -25,7 +26,7 @@ const codeExample = `<form>
   </div>
     <div class="io">
       <label class="io__label" for="message" required>Message</label>
-      <textarea class="io__control shadow--pop" placeholder="Eiusmod est proident ..." id="message"></textarea>
+      <textarea class="io__control shadow--pop" placeholder="${lorem}" id="message"></textarea>
   </div>
 </form>
 `;
@@ -45,8 +46,6 @@ const codeExample2 = `<div class="row">
   </div>
 </div>
 `;
-
-const lorem = `Enter extra details here`;
 
 class InputExample extends Component {
   render() {
@@ -108,6 +107,7 @@ class InputExample extends Component {
               label="Read Only Example"
               value="This text is the read only style"
               readonly="true"
+              size="6"
             />
           </div>
           <div className="col-12 sm-6">
@@ -117,6 +117,7 @@ class InputExample extends Component {
               label="Disabled Example"
               value="This text is the disabled style"
               disabled="true"
+              size="6"
             />
           </div>
         </div>

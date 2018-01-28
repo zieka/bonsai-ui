@@ -15,7 +15,7 @@ body {
   font-weight: 100;
 }
 
-@for $i from 1 through 7 {
+@for $i from 1 through 4 {
   .f#{$i} {
     @extend %font-spacing-style;
   }

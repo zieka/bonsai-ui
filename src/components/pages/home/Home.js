@@ -155,12 +155,14 @@ class Home extends Component {
           <div className="row">
             <div className="col-12 sm-4" style={spacingStyle}>
               <Card title="Bonsai" classes="shadow--pop">
-                <p>This card has a title text and no title background image.</p>
+                <p className="f7">
+                  This card has a title text and no title background image.
+                </p>
               </Card>
             </div>
             <div className="col-12 sm-4" style={spacingStyle}>
               <Card height="150px" imgSrc="./hb_250.jpg" classes="shadow--pop">
-                <p>
+                <p className="f7">
                   This card has no title text but has a title background image.
                 </p>
               </Card>
@@ -171,7 +173,9 @@ class Home extends Component {
                 height="150px"
                 imgSrc="./hb_250.jpg"
                 classes="shadow--pop">
-                <p>This card has a title text and a title background image.</p>
+                <p className="f7">
+                  This card has a title text and a title background image.
+                </p>
               </Card>
             </div>
           </div>
