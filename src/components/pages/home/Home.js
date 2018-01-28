@@ -109,6 +109,18 @@ class Home extends Component {
               width="250"
             />
           </div>
+          <p>
+            The .shadow--pop class adds a shadow on interaction with the
+            element:
+          </p>
+          <div style={{ textAlign: 'center' }}>
+            <img
+              className="shadow--pop"
+              src="./hb_250.jpg"
+              alt="Bonsai with interactive shadows"
+              width="250"
+            />
+          </div>
           <h3 className="f3">Alignment</h3>
           <p>Text Alignment can be done using the following classes:</p>
           <div style={{ marginBottom: '3rem' }}>

@@ -45,11 +45,21 @@ body {
   font-size: $f7-font-size;
 } /* Small and hard to read for many people so use with extreme caution */
 
-.shadow-h {
+.shadow-h,
+.shadow--pop:hover,
+.shadow--pop:focus {
   box-shadow: $shadow-higher-level;
 }
-.shadow-l {
+.shadow-l,
+.shadow--pop:active {
   box-shadow: $shadow-lower-level;
+}
+
+.shadow--pop {
+  transition: all 0.2s linear;
+  &:hover {
+    transform: translate3d(0, -2px, 0);
+  }
 }
 
 .tl {
