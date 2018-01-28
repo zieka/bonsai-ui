@@ -8,13 +8,13 @@ const codeExample = `<form>
     <div class="col-12 sm-6">
       <div class="io">
         <label class="io__label" for="emailAddress" required>Your email</label>
-        <input class="io__control" type="email" placeholder="name@mail.com" id="emailAddress" />
+        <input class="io__control shadow--pop" type="email" placeholder="name@mail.com" id="emailAddress" />
       </div>
     </div>
     <div class="col-12 sm-6">
       <div class="io">
         <label class="io__label" for="reason">Reason for Contacting</label>
-        <select class="io__control" id="reason" required>
+        <select class="io__control shadow--pop" id="reason" required>
           <option value="" hidden>Select a Reason</option>
           <option value="Option 1">General Question</option>
           <option value="Option 2">Report Issue</option>
@@ -25,7 +25,7 @@ const codeExample = `<form>
   </div>
     <div class="io">
       <label class="io__label" for="message" required>Message</label>
-      <textarea class="io__control" placeholder="Eiusmod est proident ..." id="message"></textarea>
+      <textarea class="io__control shadow--pop" placeholder="Eiusmod est proident ..." id="message"></textarea>
   </div>
 </form>
 `;
@@ -76,7 +76,10 @@ class InputExample extends Component {
                 <label className="io__label" htmlFor="reason">
                   Reason for Contacting
                 </label>
-                <select className="io__control" id="reason" required>
+                <select
+                  className="io__control shadow--pop"
+                  id="reason"
+                  required>
                   <option value="" hidden>
                     Select a Reason
                   </option>
@@ -87,12 +90,7 @@ class InputExample extends Component {
               </div>
             </div>
           </div>
-          <IOTextArea
-            className="io__control"
-            placeholder={lorem}
-            inputId="message"
-            label="message"
-          />
+          <IOTextArea placeholder={lorem} inputId="message" label="message" />
         </form>
         <CodeSnippet code={codeExample} lang="html" />
         <p>There are also styles for disabled or readonly attributes:</p>

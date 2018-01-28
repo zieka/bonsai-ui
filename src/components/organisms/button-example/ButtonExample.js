@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import './ButtonExample.css';
 import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 
-const codeExample = `<button class="btn">Button</button>
+const codeExample = `<button class="btn shadow--pop">Button</button>
 <button class="btn" disabled>Button Disabled</button>
 `;
 
-const codeExample2 = `<button class="btn btn--fill">Fill</button>
+const codeExample2 = `<button class="btn btn--fill shadow--pop">Fill</button>
 <button class="btn btn--fill" disabled>Fill Disabled</button>
 `;
 
-const codeExample3 = `<button class="btn btn--danger">Danger</button>
+const codeExample3 = `<button class="btn btn--danger shadow--pop">Danger</button>
 <button class="btn btn--danger" disabled>Danger Disabled</button>
 `;
 
@@ -24,8 +24,8 @@ class ButtonExample extends Component {
           the button and can be used as a default button:
         </p>
         <div style={{ margin: '1.66rem 0' }}>
-          <button className="btn">Button</button>
-          <button className="btn" disabled>
+          <button className="btn shadow--pop">Button</button>
+          <button className="btn shadow--pop" disabled>
             Button Disabled
           </button>
         </div>
@@ -36,8 +36,8 @@ class ButtonExample extends Component {
           the user to the next step:
         </p>
         <div style={{ margin: '1.66rem 0' }}>
-          <button className="btn btn--fill">Fill</button>
-          <button className="btn btn--fill" disabled>
+          <button className="btn btn--fill shadow--pop">Fill</button>
+          <button className="btn btn--fill shadow--pop" disabled>
             Fill Disabled
           </button>
         </div>
@@ -48,8 +48,8 @@ class ButtonExample extends Component {
           user to a potentially negative action:
         </p>
         <div style={{ margin: '1.66rem 0' }}>
-          <button className="btn btn--danger">Danger</button>
-          <button className="btn btn--danger" disabled>
+          <button className="btn btn--danger shadow--pop">Danger</button>
+          <button className="btn btn--danger shadow--pop" disabled>
             Danger Disabled
           </button>
         </div>

@@ -8,7 +8,7 @@ class IOTextArea extends Component {
           {this.props.label}
         </label>
         <textarea
-          className="io__control"
+          className="io__control shadow--pop"
           id={this.props.inputId}
           autoFocus={this.props.autofocus}
           cols={this.props.cols}

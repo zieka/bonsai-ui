@@ -52,7 +52,6 @@ select {
   &:focus {
     border: 1px solid $info;
     outline: 0;
-    @extend .shadow-l;
   }
 }
 
