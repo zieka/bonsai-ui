@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Prism from '@maji/react-prism';
-import 'prismjs/themes/prism-tomorrow.css';
+import 'prismjs/themes/prism.css';
 import './CodeSnippet.css';
 
 class CodeSnippet extends Component {

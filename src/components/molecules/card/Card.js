@@ -7,7 +7,7 @@ function imgSrc(src) {
 class Card extends Component {
   render() {
     return (
-      <div className={this.props.shadow ? 'card shadow-l' : 'card'}>
+      <div className={`card ${this.props.classes}`}>
         <div
           className="card__title"
           style={{
