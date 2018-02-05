@@ -125,19 +125,19 @@ class Home extends Component {
           <p>Text Alignment can be done using the following classes:</p>
           <div style={{ marginBottom: '3rem' }}>
             <p className="tl f5">
-              Use <strong>class="tl"</strong> for left aligned text
+              <strong>class="tl"</strong> for left aligned text
             </p>
             <p className="tc f5">
-              Use <strong>class="tc"</strong> for center aligned text
+              <strong>class="tc"</strong> for center aligned text
             </p>
             <p className="tr f5">
-              Use <strong>class="tr"</strong> for right aligned text
+              <strong>class="tr"</strong> for right aligned text
             </p>
             <p className="tj f5">
-              Use <strong>class="tj"</strong> for justified text which is when
-              the text is aligned along the left margin, and letter- and
+              <strong>class="tj"</strong> for justified text which is when the
+              text is aligned along the left margin, and letter- and
               word-spacing is adjusted so that the text falls flush with both
-              margins, also known as fully justified or full justification;
+              margins.
             </p>
           </div>
         </Topic>
@@ -256,21 +256,28 @@ class Home extends Component {
           </div>
         </Topic>
         <Topic title="Toggles">
+          Toggles allow users to interact with an application by toggling given
+          options on or off. Toggles can be disabled by adding the disabled
+          attribute to the input element. Additionally toggles will default to
+          unchecked; however, you can set the default to checked by adding the
+          checked attribute.
+          <h3 className="f3">Checkbox</h3>
           <p>
-            Dolor quis aute dolore cupidatat est nisi id tempor adipisicing esse
-            enim. Consequat ea id sit in in duis esse aliqua est sunt sint duis
-            amet minim in. Exercitation nostrud occaecat consectetur sit est
-            adipisicing anim ex. Commodo cillum do sit anim deserunt aliqua
-            dolor exercitation nisi amet adipisicing ea reprehenderit culpa
-            aliqua minim ut. Et aliquip veniam pariatur veniam excepteur
-            deserunt duis voluptate. Esse magna laboris ullamco quis incididunt
-            deserunt laboris qui nulla.
+            Checkboxes are used to toggle options which are independant of
+            eachother.
           </p>
+          <h3 className="f3">Switch</h3>
           <p>
-            Voluptate culpa ullamco proident nulla elit aute sit laboris mollit
-            in. Occaecat consequat dolor excepteur velit exercitation deserunt
-            eu id est enim cillum pariatur culpa esse excepteur laborum non.
-            Elit officia consequat ad aliqua velit adipisicing officia nulla.
+            Switches are similar to checkboxes in that they are used to toggle
+            options which are independant of eachother. Switches differ from
+            checkboxes in that they are used for instaneous actions while
+            checkboxes are more passive and often require a seperate submission
+            of some sort.
+          </p>
+          <h3 className="f3">Radiobutton</h3>
+          <p>
+            Radio Buttons are used to select one option out of a group of
+            mutually exclusive options
           </p>
         </Topic>
         <Topic title="Tabs">
