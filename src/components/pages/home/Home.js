@@ -75,13 +75,13 @@ class Home extends Component {
           </p>
           <p>Font sizing uses the following f# classes:</p>
           <div className="tc" style={{ marginBottom: '3rem' }}>
-            <div className="f1">&lt;div class="f1"&gt;</div>
-            <div className="f2">&lt;div class="f2"&gt;</div>
-            <div className="f3">&lt;div class="f3"&gt;</div>
-            <div className="f4">&lt;div class="f4"&gt;</div>
-            <div className="f5">&lt;div class="f5"&gt;</div>
-            <div className="f6">&lt;div class="f6"&gt;</div>
-            <div className="f7">&lt;div class="f7"&gt;</div>
+            <div className="f1">class="f1"</div>
+            <div className="f2">class="f2"</div>
+            <div className="f3">class="f3"</div>
+            <div className="f4">class="f4"</div>
+            <div className="f5">class="f5"</div>
+            <div className="f6">class="f6"</div>
+            <div className="f7">class="f7"</div>
           </div>
           <h3 className="f3">Shadows</h3>
           <p>

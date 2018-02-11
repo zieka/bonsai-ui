@@ -1,5 +1,5 @@
 html {
-  line-height: 1.15;
+  line-height: 1.5rem;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -21,7 +21,7 @@ body {
   }
 }
 
-/* Type Scale */
+// Type Scale
 
 .f1 {
   font-size: $f1-font-size;
@@ -47,10 +47,11 @@ body {
   font-size: $f6-font-size;
   line-height: $f6-font-size + 0.5rem;
 }
+// Small and hard to read for many people so use with extreme caution
 .f7 {
   font-size: $f7-font-size;
   line-height: $f7-font-size + 0.5rem;
-} /* Small and hard to read for many people so use with extreme caution */
+}
 
 .shadow-h,
 .shadow--pop:hover,

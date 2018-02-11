@@ -104,8 +104,9 @@ class ButtonExample extends Component {
           </button>
         </div>
         <p>
-          The <code>btn--circle-#</code> class; the # is a number 1-7 which will
-          create presized circles ideal for those font sizes:
+          The <code>btn--circle-#</code> class adds a circle shape to buttons.
+          The # in the class name is a number 1-7 which will create presized
+          circles ideal for those font sizes:
         </p>
         <div style={{ margin: '1.66rem 0' }}>
           <button className="btn f1 btn--circle-1 btn--fill shadow--pop">
