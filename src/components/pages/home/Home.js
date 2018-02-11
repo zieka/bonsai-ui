@@ -183,7 +183,8 @@ class Home extends Component {
         <Topic title="Busy Indicator">
           <p>
             A busy indicator can be used while waiting for an asynchronous task
-            to complete and is as simple as adding a div with the class 'busy':
+            to complete and is as simple as adding a div with the class{' '}
+            <code>busy</code>:
           </p>
           <div className="row tc">
             <div className="col-6">
@@ -203,7 +204,7 @@ class Home extends Component {
               <div className="busy f1" />
             </div>
             <div className="col-6">
-              <div className="f1">F1</div>
+              <div className="f1">f1</div>
             </div>
           </div>
           <div className="row tc">
@@ -211,7 +212,7 @@ class Home extends Component {
               <div className="busy f2" />
             </div>
             <div className="col-6">
-              <div className="f2">F2</div>
+              <div className="f2">f2</div>
             </div>
           </div>
           <div className="row tc">
@@ -219,7 +220,7 @@ class Home extends Component {
               <div className="busy f3" />
             </div>
             <div className="col-6">
-              <div className="f3">F3</div>
+              <div className="f3">f3</div>
             </div>
           </div>
           <div className="row tc">
@@ -227,7 +228,7 @@ class Home extends Component {
               <div className="busy f4" />
             </div>
             <div className="col-6">
-              <div className="f4">F4</div>
+              <div className="f4">f4</div>
             </div>
           </div>
           <div className="row tc">
@@ -235,7 +236,7 @@ class Home extends Component {
               <div className="busy f5" />
             </div>
             <div className="col-6">
-              <div className="f5">F5</div>
+              <div className="f5">f5</div>
             </div>
           </div>
           <div className="row tc">
@@ -243,7 +244,7 @@ class Home extends Component {
               <div className="busy f6" />
             </div>
             <div className="col-6">
-              <div className="f6">F6</div>
+              <div className="f6">f6</div>
             </div>
           </div>
           <div className="row tc">
@@ -251,7 +252,7 @@ class Home extends Component {
               <div className="busy f7" />
             </div>
             <div className="col-6">
-              <div className="f7">F7</div>
+              <div className="f7">f7</div>
             </div>
           </div>
         </Topic>

@@ -19,8 +19,6 @@ $columns: 12;
   @for $i from 1 through $columns {
     .col-#{$i} {
       @extend %float-styles;
-    }
-    .col-#{$i} {
       flex: 0 0 to-fixed(percentage($i/$columns));
       max-width: to-fixed(percentage($i/$columns));
     }
