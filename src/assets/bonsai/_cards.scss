@@ -3,7 +3,7 @@
 .card {
   border: $standard-border;
   border-radius: $border-radius;
-  background-color: #eaeaea;
+  background-color: $card-bg-color;
 
   &__title {
     color: #fff;
