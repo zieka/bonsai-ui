@@ -23,8 +23,8 @@ const codeExample4 = `<button class="btn f1 btn--circle-1 btn--fill shadow--pop"
 <button class="btn f7 btn--circle-7 btn--fill shadow--pop">7</button>
 `;
 
-const codeExample5 = `<button class="btn f4 btn--circle-3 btn--fill shadow--pop">1</button>
-<button class="btn f7 btn--circle-3 btn--fill shadow--pop">2</button>
+const codeExample5 = `<button class="btn f4 btn--circle-3 btn--fill shadow--pop">Yes</button>
+<button class="btn f7 btn--circle-3 btn--fill shadow--pop">No</button>
 `;
 
 class ButtonExample extends Component {
