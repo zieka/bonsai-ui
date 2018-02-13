@@ -6,6 +6,7 @@ import ButtonExample from '../../organisms/button-example/ButtonExample';
 import InputExample from '../../organisms/input-example/InputExample';
 // import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import Card from '../../molecules/card/Card';
+import LazyLoad from 'react-lazyload';
 
 const spacingStyle = {
   boxSizing: 'border-box',
@@ -37,30 +38,38 @@ class Home extends Component {
             your goal, Bonsai may be for you.
           </p>
           <div className="row" style={{ marginTop: '2rem' }}>
-            <img
-              className="col-3"
-              src="./jquery-free.svg"
-              alt="JQUERY FREE"
-              height="92"
-            />
-            <img
-              className="col-3"
-              src="./svg-friendly.svg"
-              alt="SVG FRIENDLY"
-              height="92"
-            />
-            <img
-              className="col-3"
-              src="./pro-sass.svg"
-              alt="PRO SASS"
-              height="92"
-            />
-            <img
-              className="col-3"
-              src="./sketch-assets.svg"
-              alt="SKETCH ASSETS"
-              height="92"
-            />
+            <LazyLoad height={100}>
+              <img
+                className="col-3"
+                src="./jquery-free.svg"
+                alt="JQUERY FREE"
+                height="92"
+              />
+            </LazyLoad>
+            <LazyLoad height={100}>
+              <img
+                className="col-3"
+                src="./svg-friendly.svg"
+                alt="SVG FRIENDLY"
+                height="92"
+              />
+            </LazyLoad>
+            <LazyLoad height={100}>
+              <img
+                className="col-3"
+                src="./pro-sass.svg"
+                alt="PRO SASS"
+                height="92"
+              />
+            </LazyLoad>
+            <LazyLoad height={100}>
+              <img
+                className="col-3"
+                src="./sketch-assets.svg"
+                alt="SKETCH ASSETS"
+                height="92"
+              />
+            </LazyLoad>
           </div>
         </Topic>
         <Topic title="The Grid System">
@@ -90,36 +99,42 @@ class Home extends Component {
             will appear close to the origin plane:
           </p>
           <div style={{ textAlign: 'center' }}>
-            <img
-              className="shadow-l"
-              src="./hb_250.jpg"
-              alt="Bonsai with low shadow"
-              width="250"
-            />
+            <LazyLoad height={200}>
+              <img
+                className="shadow-l"
+                src="./hb_250.jpg"
+                alt="Bonsai with low shadow"
+                width="250"
+              />
+            </LazyLoad>
           </div>
           <p>
             The .shadow-h class adds a high level shadow meaning it will appear
             further away from the origin plane than the lower shadow level:
           </p>
           <div style={{ textAlign: 'center' }}>
-            <img
-              className="shadow-h"
-              src="./hb_250.jpg"
-              alt="Bonsai with high shadow"
-              width="250"
-            />
+            <LazyLoad height={200}>
+              <img
+                className="shadow-h"
+                src="./hb_250.jpg"
+                alt="Bonsai with high shadow"
+                width="250"
+              />
+            </LazyLoad>
           </div>
           <p>
             The .shadow--pop class adds a shadow on interaction with the
             element:
           </p>
           <div style={{ textAlign: 'center' }}>
-            <img
-              className="shadow--pop"
-              src="./hb_250.jpg"
-              alt="Bonsai with interactive shadows"
-              width="250"
-            />
+            <LazyLoad height={200}>
+              <img
+                className="shadow--pop"
+                src="./hb_250.jpg"
+                alt="Bonsai with interactive shadows"
+                width="250"
+              />
+            </LazyLoad>
           </div>
           <h3 className="f3">Alignment</h3>
           <p>Text Alignment can be done using the following classes:</p>
