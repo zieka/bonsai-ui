@@ -2,6 +2,13 @@ html {
   line-height: 1.5rem;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 0.85pc;
+  @include sm-device {
+    font-size: 0.95pc;
+  }
+  @include md-device {
+    font-size: 1pc;
+  }
 }
 
 body {
