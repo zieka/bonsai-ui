@@ -6,6 +6,7 @@ import ButtonExample from '../../organisms/button-example/ButtonExample';
 import InputExample from '../../organisms/input-example/InputExample';
 // import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import Card from '../../molecules/card/Card';
+import Switch from '../../molecules/switch/Switch';
 import LazyLoad from 'react-lazyload';
 
 const spacingStyle = {
@@ -290,6 +291,7 @@ class Home extends Component {
             checkboxes are more passive and often require a seperate submission
             of some sort.
           </p>
+          <Switch />
           <h3 className="f3">Radiobutton</h3>
           <p>
             Radio Buttons are used to select one option out of a group of
