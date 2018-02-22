@@ -283,6 +283,9 @@ class Home extends Component {
             Checkboxes are used to toggle options which are independant of
             eachother.
           </p>
+          <div>
+            <input type="checkbox" />
+          </div>
           <h3 className="f3">Switch</h3>
           <p>
             Switches are similar to checkboxes in that they are used to toggle
@@ -297,6 +300,9 @@ class Home extends Component {
             Radio Buttons are used to select one option out of a group of
             mutually exclusive options
           </p>
+          <div>
+            <input type="radio" />
+          </div>
         </Topic>
         <Topic title="Tabs">
           <p>
