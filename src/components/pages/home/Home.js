@@ -7,6 +7,7 @@ import InputExample from '../../organisms/input-example/InputExample';
 // import CodeSnippet from '../../molecules/code-snippet/CodeSnippet';
 import Card from '../../molecules/card/Card';
 import Switch from '../../molecules/switch/Switch';
+import Checkbox from '../../molecules/checkbox/Checkbox';
 import LazyLoad from 'react-lazyload';
 
 const spacingStyle = {
@@ -284,7 +285,7 @@ class Home extends Component {
             eachother.
           </p>
           <div>
-            <input type="checkbox" />
+            <Checkbox />
           </div>
           <h3 className="f3">Switch</h3>
           <p>

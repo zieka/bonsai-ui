@@ -27,7 +27,7 @@
   user-select: none;
 
   .switch__input:checked ~ & {
-    background-color: #1890ff;
+    background-color: $info;
     & .switch-inner::after {
       content: '\2713 ';
     }
