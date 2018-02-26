@@ -8,6 +8,7 @@ import InputExample from '../../organisms/input-example/InputExample';
 import Card from '../../molecules/card/Card';
 import Switch from '../../molecules/switch/Switch';
 import Checkbox from '../../molecules/checkbox/Checkbox';
+import Radiobutton from '../../molecules/radiobutton/Radiobutton';
 import LazyLoad from 'react-lazyload';
 
 const spacingStyle = {
@@ -301,9 +302,7 @@ class Home extends Component {
             Radio Buttons are used to select one option out of a group of
             mutually exclusive options
           </p>
-          <div>
-            <input type="radio" />
-          </div>
+          <Radiobutton />
         </Topic>
         <Topic title="Tabs">
           <p>
