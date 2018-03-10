@@ -37,6 +37,9 @@
     right: 0;
     width: 100%;
     height: 100%;
+    &[disabled] {
+      cursor: not-allowed;
+    }
   }
 
   &__inner {
@@ -46,7 +49,7 @@
     display: block;
     width: 16px;
     height: 16px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #777;
     border-radius: 2px;
     background-color: #fff;
     -webkit-transition: all 0.3s;
@@ -55,6 +58,10 @@
     .checkbox__input:checked ~ & {
       background-color: $info;
       border-color: $info;
+    }
+    .checkbox__input[disabled] ~ & {
+      background-color: #bbb;
+      border-color: #ddd;
     }
 
     &::after {

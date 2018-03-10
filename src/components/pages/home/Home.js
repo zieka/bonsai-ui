@@ -286,7 +286,22 @@ class Home extends Component {
             eachother.
           </p>
           <div>
-            <Checkbox />
+            <div>
+              <Checkbox label="Checkbox that starts unchecked" />
+            </div>
+            <div>
+              <Checkbox checked={true} label="Checkbox that starts checked" />
+            </div>
+            <div>
+              <Checkbox disabled={true} label="Disabled unchecked checkbox" />
+            </div>
+            <div>
+              <Checkbox
+                disabled={true}
+                checked={true}
+                label="Disabled checked checkbox"
+              />
+            </div>
           </div>
           <h3 className="f3">Switch</h3>
           <p>
