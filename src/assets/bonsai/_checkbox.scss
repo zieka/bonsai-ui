@@ -2,7 +2,7 @@
   color: rgba(0, 0, 0, 0.65);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin-bottom: 5px;
   padding: 0;
   list-style: none;
   line-height: unset;
@@ -49,7 +49,7 @@
     display: block;
     width: 16px;
     height: 16px;
-    border: 1px solid #777;
+    border: 1px solid #999;
     border-radius: 2px;
     background-color: #fff;
     -webkit-transition: all 0.3s;
@@ -60,7 +60,7 @@
       border-color: $info;
     }
     .checkbox__input[disabled] ~ & {
-      background-color: #bbb;
+      background-color: #ccc;
       border-color: #ddd;
     }
 

@@ -311,7 +311,24 @@ class Home extends Component {
             checkboxes are more passive and often require a seperate submission
             of some sort.
           </p>
-          <Switch />
+          <div>
+            <div>
+              <Switch label="Switch that starts unchecked" />
+            </div>
+            <div>
+              <Switch checked={true} label="Switch that starts checked" />
+            </div>
+            <div>
+              <Switch disabled={true} label="Disabled unchecked switch" />
+            </div>
+            <div>
+              <Switch
+                disabled={true}
+                checked={true}
+                label="Disabled checked switch"
+              />
+            </div>
+          </div>
           <h3 className="f3">Radiobutton</h3>
           <p>
             Radio Buttons are used to select one option out of a group of

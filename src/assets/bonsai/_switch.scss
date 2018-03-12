@@ -1,9 +1,20 @@
 .switch {
+  color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 5px;
+}
+
+.switch__outer {
+  display: inline-block;
   height: 25px;
   min-width: 50px;
+  vertical-align: middle;
 }
+
+.switch__text {
+  margin: 0 10px;
+}
+
 .switch__graphic {
-  color: rgba(0, 0, 0, 0.65);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,7 +28,7 @@
   vertical-align: middle;
   border-radius: 100px;
   border: 1px solid transparent;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #999;
   cursor: pointer;
   -webkit-transition: all 0.36s;
   transition: all 0.36s;
@@ -29,8 +40,17 @@
   .switch__input:checked ~ & {
     background-color: $info;
     & .switch-inner::after {
-      content: '\2713 ';
+      content: '\2713 '; // checkmark
     }
+  }
+
+  .switch__input[disabled] ~ & {
+    background-color: #ccc;
+  }
+  .switch__input[disabled] ~ &::after {
+    content: '\1F512'; // padlock
+    font-size: 0.6rem;
+    text-align: center;
   }
 }
 
