@@ -31,7 +31,7 @@ class Switch extends Component {
             <span className="switch-inner" />
           </span>
         </div>
-        <span className="switch__text">{this.props.label}</span>
+        <span>{this.props.label}</span>
       </div>
     );
   }

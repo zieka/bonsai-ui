@@ -28,7 +28,7 @@ class Checkbox extends Component {
           />
           <span className="checkbox__inner" />
         </span>
-        <span className="checkbox__text">{this.props.label}</span>
+        <span>{this.props.label}</span>
       </label>
     );
   }

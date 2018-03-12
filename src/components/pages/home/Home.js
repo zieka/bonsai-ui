@@ -307,7 +307,7 @@ class Home extends Component {
           <p>
             Switches are similar to checkboxes in that they are used to toggle
             options which are independant of eachother. Switches differ from
-            checkboxes in that they are used for instaneous actions while
+            checkboxes in that they are used for instantaneous actions while
             checkboxes are more passive and often require a seperate submission
             of some sort.
           </p>

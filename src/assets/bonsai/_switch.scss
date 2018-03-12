@@ -1,6 +1,6 @@
 .switch {
   color: rgba(0, 0, 0, 0.65);
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 
 .switch__outer {
@@ -8,10 +8,7 @@
   height: 25px;
   min-width: 50px;
   vertical-align: middle;
-}
-
-.switch__text {
-  margin: 0 10px;
+  margin: auto 0.6rem;
 }
 
 .switch__graphic {
