@@ -79,8 +79,8 @@ class Home extends Component {
           <GridExample />
         </Topic>
         <Topic title="Typography">
+          <h3 className="f3">Font Sizes</h3>
           <p>
-            <h3 className="f3">Font Sizes</h3>
             Type is all set with the rems, so font-sizes and spacial
             relationships can be responsively sized based on a single{' '}
             <code>&lt;html&gt;</code> font-size property.

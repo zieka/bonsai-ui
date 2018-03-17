@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import mangle from '../../../helpers/mangle';
 
 class Switch extends Component {
   constructor(props) {
     super(props);
     this.state = {
       disabled: this.props.disabled,
-      checked: this.props.checked
+      checked: this.props.checked || false
     };
   }
 
@@ -18,20 +19,21 @@ class Switch extends Component {
 
   render() {
     return (
-      <div class="switch">
-        <div class="switch__outer">
+      <div className="switch">
+        <div className="switch__outer">
           <input
             className="switch__input"
             type="checkbox"
             disabled={this.state.disabled}
             checked={this.state.checked}
-            onClick={this.handleClick}
+            onChange={this.handleClick}
+            id={mangle(this.props.label)}
           />
-          <span className="switch__graphic" tabindex="0">
+          <span className="switch__graphic" tabIndex="0">
             <span className="switch-inner" />
           </span>
         </div>
-        <span>{this.props.label}</span>
+        <label htmlFor={mangle(this.props.label)}>{this.props.label}</label>
       </div>
     );
   }

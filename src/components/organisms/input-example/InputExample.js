@@ -9,7 +9,7 @@ const codeExample = `<form>
     <div class="col-12 sm-6">
       <div class="io">
         <label class="io__label" for="emailAddress" required>Your email</label>
-        <input class="io__control shadow--pop" type="email" placeholder="name@mail.com" id="emailAddress" />
+        <input class="io__control shadow--pop" type="email" autocomplete='email' placeholder="name@mail.com" id="emailAddress" />
       </div>
     </div>
     <div class="col-12 sm-6">
@@ -67,6 +67,7 @@ class InputExample extends Component {
                 inputId="emailAddress"
                 placeholder="name@mail.com"
                 type="email"
+                autocomplete="email"
                 label="Your email"
                 size="6"
               />

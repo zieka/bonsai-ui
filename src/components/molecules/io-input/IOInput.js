@@ -15,6 +15,7 @@ class IOInput extends Component {
           value={this.props.value}
           readOnly={this.props.readonly}
           disabled={this.props.disabled}
+          autoComplete={this.props.autocomplete}
         />
       </div>
     );
