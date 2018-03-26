@@ -1,0 +1,27 @@
+.table {
+  thead {
+    background: $info;
+    color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  tbody {
+    background: #ebebeb;
+
+    td {
+      padding: 0.66rem 1.33rem;
+      &:hover {
+        background: $danger;
+        color: white;
+      }
+    }
+
+    tr:hover {
+      background: lighten($danger, 50);
+    }
+  }
+  th {
+    padding: 1rem;
+  }
+}

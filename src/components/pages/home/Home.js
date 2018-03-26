@@ -355,7 +355,7 @@ class Home extends Component {
           </p>
         </Topic>
         <Topic title="Tables">
-          <table>
+          <table className="table">
             <thead>
               <tr>
                 <th>
