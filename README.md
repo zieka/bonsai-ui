@@ -1,3 +1,6 @@
+![Bonsai](./public/logo.svg)
+<img src="./public/logo.svg">
+
 <h1>
 Bonsai UI
 </h1>
