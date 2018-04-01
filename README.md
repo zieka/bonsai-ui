@@ -1,5 +1,4 @@
-![Bonsai](./public/logo.svg)
-<img src="./public/logo.svg">
+<img src="./public/logo.svg" height="250">
 
 <h1>
 Bonsai UI
