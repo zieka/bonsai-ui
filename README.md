@@ -1,8 +1,10 @@
-<img src="./public/logo.svg" height="250">
-
+<div style="text-align: center;">
+  <img src="./public/logo.svg" height="250">
 <h1>
 Bonsai UI
 </h1>
+</div>
+
 
 <p>
   <a href="#badge">
@@ -10,7 +12,6 @@ Bonsai UI
   </a>
 </p>
 
-<hr/>
 
 Large component libraries and UI frameworks tend to offer a lot of tools to aid in rapid prototyping and then expect developers to cut out the excess. Bonsai's approach is to start on the opposite end of the spectrum.
 
