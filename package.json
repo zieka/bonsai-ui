@@ -52,6 +52,7 @@
     "@storybook/addon-a11y": "^3.4.1",
     "@storybook/addon-centered": "^3.4.1",
     "@storybook/addon-knobs": "^3.4.1",
+    "@storybook/addon-viewport": "^3.4.2",
     "@storybook/react": "^3.4.1",
     "prettier": "^1.9.2"
   }
