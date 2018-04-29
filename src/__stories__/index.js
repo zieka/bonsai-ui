@@ -64,40 +64,52 @@ storiesOf('Buttons', module)
 
     const font = selectV2(fontLabel, fontOptions, fontDefaultValue);
 
-    const circleLabel = 'Circle Size';
-    const circleOptions = {
-      none: '',
-      1: 'btn--circle-1',
-      2: 'btn--circle-2',
-      3: 'btn--circle-3',
-      4: 'btn--circle-4',
-      5: 'btn--circle-5',
-      6: 'btn--circle-6',
-      7: 'btn--circle-7'
+    const shapeLabel = 'Shape';
+    const shapeOptions = {
+      'default (rectangle)': '',
+      'circle 1': 'btn--circle-1',
+      'circle 2': 'btn--circle-2',
+      'circle 3': 'btn--circle-3',
+      'circle 4': 'btn--circle-4',
+      'circle 5': 'btn--circle-5',
+      'circle 6': 'btn--circle-6',
+      'circle 7': 'btn--circle-7',
+      pill: 'btn--pill'
     };
-    const circleDefaultValue = 'none';
+    const shapeDefaultValue = 'none';
 
-    const circle = selectV2(circleLabel, circleOptions, circleDefaultValue);
+    const shape = selectV2(shapeLabel, shapeOptions, shapeDefaultValue);
 
-    const disabledLabel = 'disabled';
-    const disabledOptions = {
-      true: true,
-      false: false
+    const flavorLabel = 'Flavor';
+    const flavorOptions = {
+      default: '',
+      fill: 'btn--fill',
+      danger: 'btn--danger'
     };
-    const disabledDefaultValue = 'false';
+    const flavorDefaultValue = '';
 
-    const disabled = selectV2(
-      disabledLabel,
-      disabledOptions,
-      disabledDefaultValue
-    );
+    const flavor = selectV2(flavorLabel, flavorOptions, flavorDefaultValue);
+
+    const isDisabled = boolean('Disabled', false);
+
+    const shadowPop = boolean('Shadow Pop', false);
+
+    const buttonText = text('Button Text', 'btn');
 
     return (
       <div>
-        <button disabled={disabled} className={`btn ${font} ${circle}`}>
-          btn
+        <button
+          disabled={isDisabled}
+          className={`btn ${flavor} ${shape} ${font} ${
+            shadowPop ? 'shadow--pop' : ''
+          }`}>
+          {buttonText}
         </button>
-        <div>{`<button class="btn ${font} ${circle}">btn</button>`}</div>
+        <div>{`<button ${
+          isDisabled ? 'disabled' : ''
+        } class="btn ${flavor} ${shape} ${font} ${
+          shadowPop ? 'shadow--pop' : ''
+        }">${buttonText}</button>`}</div>
       </div>
     );
   })
