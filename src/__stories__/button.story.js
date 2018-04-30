@@ -4,46 +4,7 @@ import { checkA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 import { selectV2 } from '@storybook/addon-knobs';
-import Switch from '../components/molecules/switch/Switch';
-import Checkbox from '../components/molecules/checkbox/Checkbox';
-import '../assets/bonsai/bonsai.css';
 import centered from '@storybook/addon-centered';
-
-storiesOf('Switch', module)
-  .addDecorator(centered)
-  .addDecorator(checkA11y)
-  .add('that starts unchecked', () => (
-    <Switch label="Switch that starts unchecked" />
-  ))
-  .add('that starts checked', () => (
-    <Switch checked={true} label="Switch that starts checked" />
-  ))
-  .add('Disabled and unchecked', () => (
-    <Switch disabled={true} label="Disabled unchecked switch" />
-  ))
-  .add('Disabled and checked', () => (
-    <Switch disabled={true} checked={true} label="Disabled checked switch" />
-  ));
-
-storiesOf('Checkbox', module)
-  .addDecorator(centered)
-  .addDecorator(checkA11y)
-  .add('that starts unchecked', () => (
-    <Checkbox label="Checkbox that starts unchecked" />
-  ))
-  .add('that starts checked', () => (
-    <Checkbox checked={true} label="Checkbox that starts checked" />
-  ))
-  .add('Disabled and unchecked', () => (
-    <Checkbox disabled={true} label="Disabled unchecked checkbox" />
-  ))
-  .add('Disabled and checked', () => (
-    <Checkbox
-      disabled={true}
-      checked={true}
-      label="Disabled checked checkbox"
-    />
-  ));
 
 storiesOf('Buttons', module)
   .addDecorator(centered)
