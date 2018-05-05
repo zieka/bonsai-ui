@@ -11,6 +11,7 @@ storiesOf('Buttons', module)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
   .add('button demo with knobs', () => {
+    const classNames = ['btn'];
     const fontLabel = 'Font Size';
     const fontOptions = {
       f1: 'f1',
@@ -24,6 +25,7 @@ storiesOf('Buttons', module)
     const fontDefaultValue = 'f5';
 
     const font = selectV2(fontLabel, fontOptions, fontDefaultValue);
+    classNames.push(font);
 
     const shapeLabel = 'Shape';
     const shapeOptions = {
@@ -37,9 +39,9 @@ storiesOf('Buttons', module)
       'circle 7': 'btn--circle-7',
       pill: 'btn--pill'
     };
-    const shapeDefaultValue = 'none';
-
+    const shapeDefaultValue = '';
     const shape = selectV2(shapeLabel, shapeOptions, shapeDefaultValue);
+    classNames.push(shape);
 
     const flavorLabel = 'Flavor';
     const flavorOptions = {
@@ -48,8 +50,8 @@ storiesOf('Buttons', module)
       danger: 'btn--danger'
     };
     const flavorDefaultValue = '';
-
     const flavor = selectV2(flavorLabel, flavorOptions, flavorDefaultValue);
+    classNames.push(flavor);
 
     const isDisabled = boolean('Disabled', false);
 
@@ -61,16 +63,14 @@ storiesOf('Buttons', module)
       <div>
         <button
           disabled={isDisabled}
-          className={`btn ${flavor} ${shape} ${font} ${
+          className={`${classNames.join(' ')} ${
             shadowPop ? 'shadow--pop' : ''
           }`}>
           {buttonText}
         </button>
-        <div>{`<button ${
-          isDisabled ? 'disabled' : ''
-        } class="btn ${flavor} ${shape} ${font} ${
-          shadowPop ? 'shadow--pop' : ''
-        }">${buttonText}</button>`}</div>
+        <div>{`<button ${isDisabled ? 'disabled' : ''} class="${classNames.join(
+          ' '
+        )} ${shadowPop ? 'shadow--pop' : ''}">${buttonText}</button>`}</div>
       </div>
     );
   })
