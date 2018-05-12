@@ -5,6 +5,5 @@ import InputExample from '../components/organisms/input-example/InputExample';
 import centered from '@storybook/addon-centered';
 
 storiesOf('Inputs', module)
-  .addDecorator(centered)
   .addDecorator(checkA11y)
   .add('Inputs example', () => <InputExample />);

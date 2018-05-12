@@ -5,7 +5,6 @@ import Switch from '../components/molecules/switch/Switch';
 import centered from '@storybook/addon-centered';
 
 storiesOf('Switch', module)
-  .addDecorator(centered)
   .addDecorator(checkA11y)
   .add('that starts unchecked', () => (
     <Switch label="Switch that starts unchecked" />

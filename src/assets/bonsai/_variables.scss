@@ -31,7 +31,7 @@ $link-color: $primary--rotate-120;
 $visited-link-color: $primary--rotate-90;
 
 $border-color: #999;
-$border-radius: 4px;
+$border-radius: 0.15rem;
 $standard-border-width: 1px;
 $standard-border: $standard-border-width solid $border-color;
 
@@ -62,3 +62,9 @@ $shadow-higher-level: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
 $shadow-lower-level: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
   0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 $card-bg-color: #fafafa;
+
+// spacing
+$spacing-none: 0 !default;
+$spacing-small: 0.5rem !default;
+$spacing-medium: 1rem !default;
+$spacing-large: 2rem !default;

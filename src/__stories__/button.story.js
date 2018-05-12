@@ -6,11 +6,34 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 import { selectV2 } from '@storybook/addon-knobs';
 import centered from '@storybook/addon-centered';
 
-storiesOf('Buttons', module)
+const stories = storiesOf('Buttons', module);
+
+stories
+  .addDecorator(checkA11y)
+  .add('default', () => <button className="btn f6">Button Default</button>)
+  .add('disabled', () => (
+    <button className="btn f6 shadow--pop" disabled>
+      Button Disabled
+    </button>
+  ));
+
+stories
+  .addDecorator(checkA11y)
+  .add('color filled', () => (
+    <button className="btn f6 btn--fill">Color Filled</button>
+  ));
+
+stories.addDecorator(checkA11y).add('color filled disabled', () => (
+  <button className="btn f6 btn--fill" disabled>
+    Color Filled Disabled
+  </button>
+));
+
+storiesOf('Tools', module)
   .addDecorator(centered)
   .addDecorator(checkA11y)
   .addDecorator(withKnobs)
-  .add('button demo with knobs', () => {
+  .add('button designer', () => {
     const classNames = ['btn'];
     const fontLabel = 'Font Size';
     const fontOptions = {
@@ -73,18 +96,4 @@ storiesOf('Buttons', module)
         )} ${shadowPop ? 'shadow--pop' : ''}">${buttonText}</button>`}</div>
       </div>
     );
-  })
-  .add('default', () => <button className="btn f6">Button Default</button>)
-  .add('disabled', () => (
-    <button className="btn f6 shadow--pop" disabled>
-      Button Disabled
-    </button>
-  ))
-  .add('color filled', () => (
-    <button className="btn f6 btn--fill">Color Filled</button>
-  ))
-  .add('color filled disabled', () => (
-    <button className="btn f6 btn--fill" disabled>
-      Color Filled Disabled
-    </button>
-  ));
+  });

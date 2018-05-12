@@ -5,7 +5,6 @@ import Checkbox from '../components/molecules/checkbox/Checkbox';
 import centered from '@storybook/addon-centered';
 
 storiesOf('Checkbox', module)
-  .addDecorator(centered)
   .addDecorator(checkA11y)
   .add('that starts unchecked', () => (
     <Checkbox label="Checkbox that starts unchecked" />

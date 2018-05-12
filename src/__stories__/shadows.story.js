@@ -5,7 +5,6 @@ import centered from '@storybook/addon-centered';
 import LazyLoad from 'react-lazyload';
 
 storiesOf('Shadows', module)
-  .addDecorator(centered)
   .addDecorator(checkA11y)
   .add('shadow examples', () => (
     <div>

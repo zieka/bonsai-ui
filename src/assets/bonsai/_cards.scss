@@ -8,7 +8,7 @@
   &__title {
     color: #fff;
     height: 3rem;
-    border-radius: $border-radius - 1px $border-radius - 1px 0 0;
+    border-radius: $border-radius - 0.0625rem $border-radius - 0.0625rem 0 0;
     background-color: $disabled-color;
   }
 

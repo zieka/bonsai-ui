@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+}
+.modal__box {
+  background-color: #fff;
+  max-width: 32rem;
+  width: 90%;
+  margin: auto;
+  border-radius: $border-radius;
+  box-shadow: $shadow-higher-level;
+}
+.modal__header {
+  @extend .pa2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+}
+.modal__title {
+  font-size: $f3-font-size;
+  width: calc(100% - 2rem);
+}
+.modal__close {
+  @extend .tc;
+  cursor: pointer;
+  width: 2rem;
+  font-size: $f3-font-size;
+  color: rgba(0, 0, 0, 0.5);
+
+  &:before {
+    content: '\00D7';
+  }
+}
+.modal__body {
+  @extend .pa2;
+  font-size: $f4-font-size;
+}
+.modal__footer {
+  @extend .pv1;
+  @extend .ph2;
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
