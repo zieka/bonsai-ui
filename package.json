@@ -14,37 +14,30 @@
     "react-lazyload": "^2.3.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "stylelint": "^9.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "npm run prettier-check && gh-pages -d build",
     "build-css": "node-sass src -o src && npm run build-bonsai",
-    "build-bonsai":
-      "node-sass src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
-    "watch-bonsai":
-      "node-sass -w src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
-    "watch-css":
-      "npm run build-css && npm run watch-bonsai && node-sass src -o src --watch",
+    "build-bonsai": "node-sass src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
+    "watch-bonsai": "node-sass -w src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
+    "watch-css": "npm run build-css && npm run watch-bonsai && node-sass src -o src --watch",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "postbuild":
-      "mkdir build/bonsai-ui && mv build/static build/bonsai-ui/static/",
+    "postbuild": "mkdir build/bonsai-ui && mv build/static build/bonsai-ui/static/",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "storybook":
-      "npm run watch-css & start-storybook -s ./src/assets/bonsai -p 9001 -c .storybook",
+    "storybook": "npm run watch-css & start-storybook -s ./src/assets/bonsai -p 9001 -c .storybook",
     "prettier-format-js": "prettier --config package.json --write './**/*.js'",
-    "prettier-check-js":
-      "prettier --config package.json --list-different './**/*.js'",
-    "prettier-format-scss":
-      "prettier --config package.json --write './**/*.scss'",
-    "prettier-check-scss":
-      "prettier --config package.json --list-different './**/*.scss'",
-    "prettier-format":
-      "npm run prettier-format-js && npm run prettier-format-scss",
-    "prettier-check": "npm run prettier-check-js && npm run prettier-check-scss"
+    "prettier-check-js": "prettier --config package.json --list-different './**/*.js'",
+    "prettier-format-scss": "prettier --config package.json --write './**/*.scss'",
+    "prettier-check-scss": "prettier --config package.json --list-different './**/*.scss'",
+    "prettier-format": "npm run prettier-format-js && npm run prettier-format-scss",
+    "prettier-check": "npm run prettier-check-js && npm run prettier-check-scss",
+    "stylelint": "stylelint './**/*.scss'"
   },
   "prettier": {
     "printWidth": 80,
@@ -57,12 +50,16 @@
     "jsxBracketSameLine": true,
     "arrowParens": "always"
   },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  },
   "devDependencies": {
     "@storybook/addon-a11y": "^3.4.1",
     "@storybook/addon-centered": "^3.4.1",
     "@storybook/addon-knobs": "^3.4.1",
     "@storybook/addon-viewport": "^3.4.2",
     "@storybook/react": "^3.4.1",
-    "prettier": "^1.9.2"
+    "prettier": "^1.9.2",
+    "stylelint-config-standard": "^18.2.0"
   }
 }
