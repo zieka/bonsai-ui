@@ -6,24 +6,23 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 import { selectV2 } from '@storybook/addon-knobs';
 import centered from '@storybook/addon-centered';
 
-const stories = storiesOf('Buttons', module);
+const stories = storiesOf('Components/Buttons', module).addDecorator(checkA11y);
 
-stories
-  .addDecorator(checkA11y)
-  .add('default', () => <button className="btn f6">Button Default</button>)
-  .add('disabled', () => (
-    <button className="btn f6 shadow--pop" disabled>
-      Button Disabled
-    </button>
-  ));
+stories.add('default', () => (
+  <button className="btn f6">Button Default</button>
+));
 
-stories
-  .addDecorator(checkA11y)
-  .add('color filled', () => (
-    <button className="btn f6 btn--fill">Color Filled</button>
-  ));
+stories.add('disabled', () => (
+  <button className="btn f6 shadow--pop" disabled>
+    Button Disabled
+  </button>
+));
 
-stories.addDecorator(checkA11y).add('color filled disabled', () => (
+stories.add('color filled', () => (
+  <button className="btn f6 btn--fill">Color Filled</button>
+));
+
+stories.add('color filled disabled', () => (
   <button className="btn f6 btn--fill" disabled>
     Color Filled Disabled
   </button>
