@@ -29,15 +29,18 @@
     padding-left: 0;
     border: none !important;
     cursor: not-allowed;
+
     &:hover,
     &:focus {
       box-shadow: none;
     }
   }
+
   &[disabled] {
     background-color: #e0e0e0;
     border-color: darken(#e0e0e0, 3%) !important;
     cursor: not-allowed;
+
     &:hover,
     &:focus {
       box-shadow: none;

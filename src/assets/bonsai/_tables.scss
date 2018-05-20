@@ -11,6 +11,7 @@
 
     td {
       padding: 0.66rem 1.33rem;
+
       &:hover {
         background: $danger;
         color: white;
@@ -21,6 +22,7 @@
       background: lighten($danger, 50);
     }
   }
+
   th {
     padding: 1rem;
   }

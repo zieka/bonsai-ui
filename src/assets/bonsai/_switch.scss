@@ -36,6 +36,7 @@
 
   .switch__input:checked ~ & {
     background-color: $info;
+
     & .switch-inner::after {
       content: '\2713 '; // checkmark
     }
@@ -44,6 +45,7 @@
   .switch__input[disabled] ~ & {
     background-color: #ccc;
   }
+
   .switch__input[disabled] ~ &::after {
     content: '\1F512'; // padlock
     font-size: 0.6rem;
@@ -60,7 +62,7 @@
   z-index: 1;
 }
 
-.switch__graphic:after {
+.switch__graphic::after {
   position: absolute;
   width: 21px;
   height: 21px;

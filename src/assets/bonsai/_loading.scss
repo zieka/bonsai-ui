@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.busy:before {
+.busy::before {
   border-radius: 50%;
   content: ' ';
   width: 2em;
@@ -19,7 +19,7 @@
   left: 0;
 }
 
-.busy:after {
+.busy::after {
   border-radius: 50%;
   content: ' ';
   width: 2em;
