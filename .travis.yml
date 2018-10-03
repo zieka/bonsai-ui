@@ -14,14 +14,13 @@ branches:
 stages:
   - test
   - name: release
-    if: branch = master AND type IN (push) AND tag IS blank
+    if: branch = master AND type IN (push) AND tag = false
 
 jobs:
   include:
     - stage: test
       script: npm run ci:test
     - stage: release
-      if: tag IS blank
       node_js: lts/*
       deploy:
         script: sh ./deploy.sh
@@ -29,7 +28,3 @@ jobs:
         skip_cleanup: true
         github-token: $GITHUB_TOKEN
         keep-history: true
-        target-branch: master
-        committer-from-gh: true
-        on:
-          branch: master
