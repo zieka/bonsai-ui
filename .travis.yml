@@ -14,7 +14,7 @@ branches:
 stages:
   - test
   - name: release
-    if: branch = master AND type IN (push) AND tag = false
+    if: branch = master AND type IN (push) AND commit_message !~ /chore\(release\)/
 
 jobs:
   include:
