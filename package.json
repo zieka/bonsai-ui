@@ -1,7 +1,6 @@
 {
   "name": "bonsai-ui",
   "version": "1.0.0",
-  "private": true,
   "homepage": "https://zieka.github.io/bonsai-ui",
   "scripts": {
     "build-bonsai": "node-sass src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
