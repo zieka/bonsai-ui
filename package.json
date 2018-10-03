@@ -1,6 +1,6 @@
 {
   "name": "bonsai-ui",
-  "version": "1.1.21",
+  "version": "1.0.0",
   "homepage": "https://zieka.github.io/bonsai-ui",
   "scripts": {
     "build-bonsai": "node-sass src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
@@ -8,7 +8,6 @@
     "build": "npm run build-css && react-scripts build",
     "ci:deploy": "npm run standard-version",
     "ci:test": "npm run prettier-check",
-    "standard-version": "standard-version",
     "deploy": "npm run prettier-check && gh-pages -d build",
     "eject": "react-scripts eject",
     "postbuild": "mkdir build/bonsai-ui && mv build/static build/bonsai-ui/static/",
@@ -19,6 +18,7 @@
     "prettier-format-js": "prettier --config package.json --write './**/*.js'",
     "prettier-format-scss": "prettier --config package.json --write './**/*.scss'",
     "prettier-format": "npm run prettier-format-js && npm run prettier-format-scss",
+    "standard-version": "standard-version",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "storybook": "npm run watch-css & start-storybook -s ./src/assets/bonsai -p 9001 -c .storybook",
@@ -28,28 +28,28 @@
     "watch-css": "npm run build-css && npm run watch-bonsai && node-sass src -o src --watch"
   },
   "dependencies": {
-    "@maji/react-prism": "^1.0.0",
-    "gh-pages": "^1.0.0",
-    "node-sass": "^4.7.1",
-    "npm-run-all": "^4.1.1",
-    "prismjs": "^1.8.3",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-lazyload": "^2.3.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
+    "@maji/react-prism": "1.0.1",
+    "gh-pages": "1.1.0",
+    "node-sass": "4.9.3",
+    "npm-run-all": "4.1.3",
+    "prismjs": "1.15.0",
+    "react-dom": "16.5.2",
+    "react-lazyload": "2.3.0",
+    "react-router-dom": "4.3.1",
+    "react-router": "4.3.1",
     "react-scripts": "1.0.14",
-    "stylelint": "^9.2.0"
+    "react": "16.5.2",
+    "stylelint": "9.6.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^3.4.1",
-    "@storybook/addon-centered": "^3.4.1",
-    "@storybook/addon-knobs": "^3.4.1",
-    "@storybook/addon-viewport": "^3.4.2",
-    "@storybook/react": "^3.4.1",
-    "prettier": "^1.9.2",
-    "standard-version": "^4.4.0",
-    "stylelint-config-standard": "^18.2.0"
+    "@storybook/addon-a11y": "3.4.11",
+    "@storybook/addon-centered": "3.4.11",
+    "@storybook/addon-knobs": "3.4.11",
+    "@storybook/addon-viewport": "3.4.11",
+    "@storybook/react": "3.4.11",
+    "prettier": "1.14.3",
+    "standard-version": "4.4.0",
+    "stylelint-config-standard": "18.2.0"
   },
   "prettier": {
     "printWidth": 80,
