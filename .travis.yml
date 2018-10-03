@@ -18,10 +18,10 @@ stages:
 
 jobs:
   include:
-    if: tag IS blank
     - stage: test
       script: npm run ci:test
     - stage: release
+      if: tag IS blank
       node_js: lts/*
       deploy:
         script: sh ./deploy.sh
