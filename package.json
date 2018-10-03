@@ -7,7 +7,7 @@
     "build-bonsai": "node-sass src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
     "build-css": "node-sass src -o src && npm run build-bonsai",
     "build": "npm run build-css && react-scripts build",
-    "ci:deploy:": "npm run ci:release",
+    "ci:deploy": "npm run ci:release",
     "ci:test": "npm run prettier-check",
     "ci:release": "standard-version && git push --follow-tags origin master",
     "deploy": "npm run prettier-check && gh-pages -d build",
@@ -27,7 +27,6 @@
     "test": "react-scripts test --env=jsdom",
     "watch-bonsai": "node-sass -w src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
     "watch-css": "npm run build-css && npm run watch-bonsai && node-sass src -o src --watch"
-
   },
   "dependencies": {
     "@maji/react-prism": "^1.0.0",
