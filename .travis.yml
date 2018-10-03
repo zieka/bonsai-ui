@@ -4,6 +4,9 @@ node_js: lts/*
 addons:
   chrome: stable
 
+before_install:
+  - ! ( git describe --exact-match HEAD ) || travis_terminate 1;
+
 install:
   - npm install
 
