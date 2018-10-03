@@ -48,7 +48,8 @@ class GridExample extends Component {
         <p>
           The base class{' '}
           <code style={{ whiteSpace: 'nowrap' }}>
-            col-<i>#</i>
+            col-
+            <i>#</i>
           </code>{' '}
           should be used to layout your site at the smallest of supported mobile
           resolutions. The # in the class name is a number between 1 and 12
@@ -106,7 +107,8 @@ class GridExample extends Component {
           you can provide supplementary classes{' '}
           <code style={{ whiteSpace: 'nowrap' }}>
             <i>breakpoint</i>-<i>#</i>
-          </code>.
+          </code>
+          .
         </p>
         <p>Resize the browser and have a look:</p>
         <div className="grid-example">
