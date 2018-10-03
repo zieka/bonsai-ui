@@ -23,7 +23,7 @@ jobs:
     - stage: release
       node_js: lts/*
       deploy:
-        script: npm run ci:deploy
+        script: sh ./deploy.sh
         provider: script
         skip_cleanup: true
         github-token: $GITHUB_TOKEN
