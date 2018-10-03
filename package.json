@@ -23,7 +23,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "storybook": "npm run watch-css & start-storybook -s ./src/assets/bonsai -p 9001 -c .storybook",
     "stylelint": "stylelint './**/*.scss'",
-    "test": "react-scripts test --env=jsdom",
+    "testing": "react-scripts test --env=jsdom",
     "watch-bonsai": "node-sass -w src/assets/bonsai/bonsai.scss -o public/ --output-style compressed",
     "watch-css": "npm run build-css && npm run watch-bonsai && node-sass src -o src --watch"
   },
