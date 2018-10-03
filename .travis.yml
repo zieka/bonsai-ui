@@ -26,3 +26,7 @@ jobs:
         script: npm run ci:deploy
         provider: script
         skip_cleanup: true
+        github-token: $GITHUB_TOKEN
+        keep-history: true
+        target-branch: master
+        committer-from-gh: true
