@@ -18,6 +18,7 @@ stages:
 
 jobs:
   include:
+    if: tag IS blank
     - stage: test
       script: npm run ci:test
     - stage: release
